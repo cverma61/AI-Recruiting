@@ -1,3 +1,4 @@
+import ReactMarkdown from 'react-markdown';
 import { Navbar } from "@/components/layout/Navbar";
 import { Verdict } from "@/components/review/Verdict";
 import { TOC } from "@/components/review/TOC";
@@ -60,7 +61,7 @@ export default function ReviewPage() {
           {/* Main Content Area */}
           <main className="lg:col-span-8 space-y-12">
             {/* Introduction - styled as lead text */}
-            <div className="prose prose-lg md:prose-xl max-w-none text-foreground font-serif leading-loose first-letter:text-5xl first-letter:font-bold first-letter:text-primary first-letter:mr-1 first-letter:float-left">
+            <div className="prose prose-lg md:prose-xl max-w-none text-foreground font-serif leading-loose first-letter:text-5xl first-letter:font-bold first-letter:text-primary first-letter:mr-1 first-letter:float-left mb-12">
               <p>
                 Purplefish is a voice screening platform designed to automate first round phone screens and push the results back into your ATS. It is typically evaluated by staffing and talent teams that want to reduce time spent on repetitive screening calls while keeping recruiters working inside their system of record.
               </p>
@@ -81,15 +82,15 @@ export default function ReviewPage() {
                     <span className="w-1.5 h-8 bg-primary rounded-full group-hover:h-10 transition-all duration-300" />
                     {section.title}
                   </h2>
-                  <div className="prose prose-lg max-w-none text-muted-foreground/90 font-serif leading-relaxed">
-                    {section.content}
+                  <div className="prose prose-lg max-w-none text-muted-foreground/90 font-serif leading-relaxed prose-headings:text-foreground prose-headings:font-sans prose-strong:text-foreground prose-a:text-primary">
+                    <ReactMarkdown>{section.content}</ReactMarkdown>
                   </div>
                 </section>
               ))}
             </div>
 
              {/* Alternatives Section */}
-             <section id="alternatives" className="scroll-mt-24">
+             <section id="alternatives" className="scroll-mt-24 pt-16 border-t">
                 <h2 className="text-2xl md:text-3xl font-bold font-sans text-foreground mb-8">
                     Top Alternatives
                 </h2>
