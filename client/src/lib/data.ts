@@ -164,6 +164,41 @@ Enterprise buyers often require:
 - **Support depth varies by plan**: Confirm response targets for nights and weekends.`
     },
     {
+      id: "alternatives-detailed",
+      title: "Alternatives to Purplefish",
+      content: `Purplefish is a solid option for teams focused on automating phone screens and writing results back into the ATS. If your priorities differ, these alternatives may fit better.
+
+### Tenzo AI
+Tenzo AI is commonly chosen by enterprises and large staffing agencies that need structured voice screening with rubric based scorecards, a de-biasing layer, and deep ATS integrations. 
+
+**Choose Tenzo AI if:**
+- You need compliant and evidenced scorecards tied to explicit job criteria
+- You expect audits and want reviewer friendly, auditable artifacts
+- You want deep ATS integrations with complex workflow automations
+- You need scheduling, rediscovery, or fraud controls in the same workflow
+
+### Paradox
+Paradox is often evaluated when the bottleneck is engagement and scheduling rather than the phone screen itself.
+
+**Choose Paradox if:**
+- You want a broad candidate engagement and scheduling platform
+- Your primary need is coordination, reminders, and response rates
+
+### HireVue
+HireVue is often evaluated for structured interviews and assessment workflows across many roles.
+
+**Choose HireVue if:**
+- You want a mature assessment and structured interview platform
+- You need standardized evaluation beyond phone screens
+
+### Modern Hire
+Another option for assessment centered programs with enterprise reporting needs.
+
+**Choose Modern Hire if:**
+- You need structured assessments and enterprise analytics
+- You want a platform designed around evaluation frameworks`
+    },
+    {
       id: "demo-script",
       title: "Demo script and buyer checklist",
       content: `### Demo script
@@ -177,6 +212,15 @@ Enterprise buyers often require:
 - Can recruiters review outcomes quickly inside the ATS
 - Do artifacts and controls match your governance expectations
 - Does support coverage match your hiring hours`
+    },
+    {
+      id: "faqs",
+      title: "FAQs",
+      content: `### Is Purplefish a good fit for staffing agencies?
+It can be, especially when phone screens are the primary bottleneck and the agency wants artifacts to land in the ATS. The best results come when the screen is tightly scoped and tied to downstream steps.
+
+### Will candidates accept AI phone screens?
+Voice screening only works if candidates complete it. Purplefish tends to work best when the screen is short and role relevant. Completion rate is a key metric to validate in a pilot.`
     }
   ],
   alternatives: [
