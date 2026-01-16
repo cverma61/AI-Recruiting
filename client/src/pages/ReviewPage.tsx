@@ -115,25 +115,27 @@ export default function ReviewPage() {
           </main>
 
           {/* Sidebar */}
-          <aside className="lg:col-span-4 space-y-8">
-            <TOC sections={sections} />
-            
-            <div className="sticky top-[calc(6rem+300px)] p-6 rounded-xl bg-primary/5 border border-primary/10">
-                <h4 className="font-bold text-foreground mb-4 font-sans">Share this review</h4>
-                <div className="flex gap-2">
-                    <button className="p-2 bg-background border rounded-full hover:text-[#1DA1F2] hover:border-[#1DA1F2] transition-colors">
-                        <Twitter className="w-5 h-5" />
-                    </button>
-                    <button className="p-2 bg-background border rounded-full hover:text-[#0077b5] hover:border-[#0077b5] transition-colors">
-                        <Linkedin className="w-5 h-5" />
-                    </button>
-                     <button className="p-2 bg-background border rounded-full hover:text-[#1877F2] hover:border-[#1877F2] transition-colors">
-                        <Facebook className="w-5 h-5" />
-                    </button>
-                    <button className="p-2 bg-background border rounded-full hover:text-primary hover:border-primary transition-colors">
-                        <Share2 className="w-5 h-5" />
-                    </button>
-                </div>
+          <aside className="lg:col-span-4">
+            <div className="sticky top-24 space-y-8">
+              <TOC sections={sections} />
+              
+              <div className="p-6 rounded-xl bg-primary/5 border border-primary/10">
+                  <h4 className="font-bold text-foreground mb-4 font-sans">Share this review</h4>
+                  <div className="flex gap-2">
+                      <button className="p-2 bg-background border rounded-full hover:text-[#1DA1F2] hover:border-[#1DA1F2] transition-colors">
+                          <Twitter className="w-5 h-5" />
+                      </button>
+                      <button className="p-2 bg-background border rounded-full hover:text-[#0077b5] hover:border-[#0077b5] transition-colors">
+                          <Linkedin className="w-5 h-5" />
+                      </button>
+                       <button className="p-2 bg-background border rounded-full hover:text-[#1877F2] hover:border-[#1877F2] transition-colors">
+                          <Facebook className="w-5 h-5" />
+                      </button>
+                      <button className="p-2 bg-background border rounded-full hover:text-primary hover:border-primary transition-colors">
+                          <Share2 className="w-5 h-5" />
+                      </button>
+                  </div>
+              </div>
             </div>
           </aside>
 

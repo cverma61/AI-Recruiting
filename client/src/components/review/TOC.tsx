@@ -29,7 +29,7 @@ export function TOC({ sections }: TOCProps) {
   }, [sections]);
 
   return (
-    <nav className="hidden lg:block sticky top-24 self-start w-64 p-6 rounded-xl border bg-card/50 backdrop-blur-sm" data-testid="nav-toc">
+    <nav className="hidden lg:block w-64 p-6 rounded-xl border bg-card/50 backdrop-blur-sm" data-testid="nav-toc">
       <h4 className="font-bold text-sm uppercase tracking-wider text-muted-foreground mb-4">
         Table of Contents
       </h4>
