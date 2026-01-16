@@ -146,19 +146,20 @@ export default function ReviewPage() {
       <footer className="bg-foreground text-background py-16 mt-24">
         <div className="container px-4 md:px-8 mx-auto grid md:grid-cols-4 gap-8">
             <div className="space-y-4">
-                <span className="text-xl font-bold tracking-tighter text-background font-sans">
-                Tech<span className="text-primary">Reviews</span>
+                <span className="text-xl md:text-2xl font-bold tracking-tight text-background font-sans">
+                  AI Recruiting <span className="text-primary">Insider</span>
                 </span>
                 <p className="text-sm text-gray-400">
                     Trusted software reviews for modern teams. We help you choose the right tools for your stack.
                 </p>
             </div>
             <div>
-                <h4 className="font-bold mb-4">Categories</h4>
+                <h4 className="font-bold mb-4">Explore</h4>
                 <ul className="space-y-2 text-sm text-gray-400">
-                    <li className="hover:text-white cursor-pointer">HR Tech</li>
-                    <li className="hover:text-white cursor-pointer">Sales Tools</li>
-                    <li className="hover:text-white cursor-pointer">Developer Tools</li>
+                    <li className="hover:text-white cursor-pointer">Buyer Guides</li>
+                    <li className="hover:text-white cursor-pointer">Comparisons</li>
+                    <li className="hover:text-white cursor-pointer">Reviews</li>
+                    <li className="hover:text-white cursor-pointer">Resources</li>
                 </ul>
             </div>
              <div>

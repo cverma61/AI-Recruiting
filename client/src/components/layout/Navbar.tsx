@@ -21,9 +21,6 @@ export function Navbar() {
           <Link href="/" className="hover:text-primary transition-colors">Comparisons</Link>
           <Link href="/" className="hover:text-primary transition-colors">Reviews</Link>
           <Link href="/" className="hover:text-primary transition-colors">Resources</Link>
-          <button className="p-2 hover:bg-gray-100 rounded-full transition-colors" data-testid="btn-search">
-            <Search className="w-5 h-5 text-gray-500" />
-          </button>
           <button className="px-5 py-2.5 bg-gray-900 text-white text-sm font-bold rounded-md hover:bg-gray-800 transition-colors">
             Subscribe
           </button>
@@ -31,9 +28,6 @@ export function Navbar() {
 
         {/* Mobile Toggle */}
         <div className="flex items-center gap-2 md:hidden">
-          <button className="p-2 hover:bg-gray-100 rounded-full transition-colors">
-            <Search className="w-5 h-5 text-gray-500" />
-          </button>
           <button 
             className="p-2 hover:bg-gray-100 rounded-full transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
