@@ -17,10 +17,10 @@ export function Navbar() {
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-600">
-          <Link href="/" className="hover:text-primary transition-colors">Buyer Guides</Link>
-          <Link href="/" className="hover:text-primary transition-colors">Comparisons</Link>
-          <Link href="/" className="hover:text-primary transition-colors">Reviews</Link>
-          <Link href="/" className="hover:text-primary transition-colors">Resources</Link>
+          <Link href="/buyer-guides" className="hover:text-primary transition-colors">Buyer Guides</Link>
+          <Link href="/comparisons" className="hover:text-primary transition-colors">Comparisons</Link>
+          <Link href="/reviews" className="hover:text-primary transition-colors">Reviews</Link>
+          <Link href="/resources" className="hover:text-primary transition-colors">Resources</Link>
           <button className="px-5 py-2.5 bg-gray-900 text-white text-sm font-bold rounded-md hover:bg-gray-800 transition-colors">
             Subscribe
           </button>

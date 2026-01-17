@@ -3,11 +3,35 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Verdict } from "@/components/review/Verdict";
 import { TOC } from "@/components/review/TOC";
 import { purplefishReview } from "@/lib/data";
+import { articles } from "@/lib/articles";
 import { Calendar, Clock, User, Share2, Twitter, Linkedin, Facebook, ArrowRight } from "lucide-react";
 import stockImage from '@assets/stock_images/abstract_digital_net_94d5aa42.jpg';
+import { useRoute } from "wouter";
 
 export default function ReviewPage() {
-  const { title, date, author, readTime, tags, verdict, sections, alternatives } = purplefishReview;
+  const [, params] = useRoute("/articles/:slug");
+  const slug = params?.slug;
+  
+  // Find article from new library
+  const dynamicArticle = articles.find(a => a.slug === slug);
+  
+  // Fallback to existing static data if not found or if it's the specific purplefish review we already styled
+  const useStaticPurplefish = slug === "purplefish-review";
+  
+  const { title, date, author, readTime, tags, verdict, sections, alternatives } = useStaticPurplefish ? purplefishReview : {
+    title: dynamicArticle?.title || "",
+    date: dynamicArticle?.updated || "",
+    author: dynamicArticle?.author || "Editorial Team",
+    readTime: dynamicArticle?.readTime || "",
+    tags: dynamicArticle?.tags || [],
+    verdict: purplefishReview.verdict, // Mock verdict for now
+    sections: dynamicArticle ? [{ id: "content", title: "Article Content", content: dynamicArticle.content }] : [],
+    alternatives: purplefishReview.alternatives
+  };
+
+  if (!dynamicArticle && !useStaticPurplefish) {
+    return <div className="p-20 text-center font-sans">Article not found.</div>;
+  }
 
   return (
     <div className="min-h-screen bg-background">
