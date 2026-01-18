@@ -333,7 +333,22 @@ Some conversational and voice agents sound polished in a demo but struggle in pr
 
 | Term | Definition | Cross-Refs |
 |---|---|---|
-| **Zero Shot** | Asking a model to perform a task without specific training examples, relying on its general capabilities. | N Shot Prompting |`,
+| **Zero Shot** | Asking a model to perform a task without specific training examples, relying on its general capabilities. | N Shot Prompting |
+
+---
+
+## Short buyer checklist
+Use these questions to force clarity in vendor conversations.
+
+1. What artifacts can you export for each candidate and each stage, including transcripts, scorecards, and logs
+2. Can you reproduce scoring for a candidate if you rerun the workflow with the same inputs and versioned settings
+3. How do you detect and respond to drift, and how do you monitor fairness over time
+4. What accessibility standards do you support, and can candidates request accommodations
+5. What is your security posture, including tenant isolation, encryption, retention, and subprocessor controls
+6. How do you handle fraud risks, including identity verification, location verification, and cheating detection
+7. What does handoff look like when candidates need a human, and what are your SLAs
+
+---`,
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
