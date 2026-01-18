@@ -323,7 +323,7 @@ Use Tenzo as the structured early screen, then pair with a downstream skills ass
 
 Tenzo is a strong fit for teams that want structured voice screening with rubric based scoring, reviewer friendly artifacts, and enterprise grade governance. It performs best when you invest in rubric design, map your ATS workflows carefully, and run a pilot that measures completion, throughput, and manager trust in the outputs.
 
-If you want a voice AI tool that is built for audits and fairness review, not just conversation, Tenzo is one of the clearest options in the category.\`,
+If you want a voice AI tool that is built for audits and fairness review, not just conversation, Tenzo is one of the clearest options in the category.`,
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
