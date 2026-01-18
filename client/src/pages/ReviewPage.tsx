@@ -6,9 +6,50 @@ import { Verdict } from "@/components/review/Verdict";
 import { TOC } from "@/components/review/TOC";
 import { purplefishReview } from "@/lib/data";
 import { articles } from "@/lib/articles";
-import { Calendar, Clock, User, Share2, Twitter, Linkedin, Facebook, ArrowRight } from "lucide-react";
+import { Calendar, Clock, User, Share2, Twitter, Linkedin, Facebook, ArrowRight, CheckCircle2 } from "lucide-react";
 import stockImage from '@assets/stock_images/abstract_digital_net_94d5aa42.jpg';
 import { useRoute } from "wouter";
+import { Progress } from "@/components/ui/progress";
+
+const CXPillarsRubric = () => {
+  const pillars = [
+    { name: "Frictionless process", weight: 25, desc: "mobile first, clear time estimates, no surprise steps, easy handoff from apply to screen" },
+    { name: "Scheduling and logistics", weight: 20, desc: "self serve reschedules, reminders, time zones, buffers, shift aware slots" },
+    { name: "Clarity and transparency", weight: 20, desc: "consistent questions, clear next steps, explainable outcomes, visible status" },
+    { name: "Respect and trust", weight: 20, desc: "opt outs honored, privacy explained, no spam cadence, tone that feels human" },
+    { name: "Accessibility and inclusion", weight: 15, desc: "low bandwidth friendly, localization, accessible UX where applicable" },
+  ];
+
+  return (
+    <div className="my-10 bg-card rounded-xl border border-border/50 overflow-hidden">
+      <div className="bg-muted/50 px-6 py-4 border-b border-border/50">
+        <h3 className="text-lg font-bold flex items-center gap-2">
+          <CheckCircle2 className="w-5 h-5 text-primary" />
+          CX Pillars & Weights
+        </h3>
+      </div>
+      <div className="divide-y divide-border/30">
+        {pillars.map((pillar) => (
+          <div key={pillar.name} className="p-6 grid grid-cols-1 md:grid-cols-12 gap-6 items-center hover:bg-muted/20 transition-colors">
+            <div className="md:col-span-4">
+              <h4 className="font-bold text-foreground mb-1">{pillar.name}</h4>
+              <span className="text-sm font-medium text-primary bg-primary/10 px-2 py-0.5 rounded">
+                Weight: {pillar.weight}%
+              </span>
+            </div>
+            
+            <div className="md:col-span-8 space-y-3">
+              <Progress value={pillar.weight} max={25} className="h-2" />
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                {pillar.desc}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
 
 export default function ReviewPage() {
   const [, params] = useRoute("/articles/:slug");
@@ -146,32 +187,50 @@ export default function ReviewPage() {
                       {section.title}
                     </h2>
                   )}
-                  <div className="prose prose-lg max-w-none text-muted-foreground/90 font-serif leading-relaxed prose-headings:text-foreground prose-headings:font-sans prose-strong:text-foreground prose-a:text-primary">
-                    <ReactMarkdown 
-                      remarkPlugins={[remarkGfm]}
-                      components={{
-                        table: ({node, ...props}) => (
-                          <div className="overflow-x-auto my-8 rounded-lg border bg-card/50">
-                            <table className="w-full text-sm text-left" {...props} />
-                          </div>
-                        ),
-                        thead: ({node, ...props}) => (
-                          <thead className="bg-muted text-muted-foreground uppercase text-xs font-bold tracking-wider" {...props} />
-                        ),
-                        th: ({node, ...props}) => (
-                          <th className="px-6 py-4 border-b whitespace-nowrap" {...props} />
-                        ),
-                        td: ({node, ...props}) => (
-                          <td className="px-6 py-4 border-b last:border-0" {...props} />
-                        ),
-                        tr: ({node, ...props}) => (
-                          <tr className="hover:bg-muted/50 transition-colors" {...props} />
-                        )
-                      }}
-                    >
-                      {section.content}
-                    </ReactMarkdown>
-                  </div>
+                  
+                  {section.title === "A practical CX rubric you can use" ? (
+                    <div className="prose prose-lg max-w-none text-muted-foreground/90 font-serif leading-relaxed">
+                      <p>This rubric is designed to predict completion and conversion, not win UX awards.</p>
+                      
+                      <CXPillarsRubric />
+                      
+                      <h3 className="text-xl font-bold font-sans text-foreground mt-8 mb-4">How to score vendors without getting fooled by demos</h3>
+                      <p>Use the same three test cases across every vendor:</p>
+                      <ol className="list-decimal pl-6 space-y-2 mb-6">
+                        <li>A candidate who applies at 11:30 pm on a phone with weak service</li>
+                        <li>A candidate who needs to reschedule twice and switches language midway through an interview due to trouble responded</li>
+                        <li>A candidate who completes the screen but is rejected and asks why</li>
+                      </ol>
+                      <p>If a vendor cannot show those end to end, they are not ready for a CX focused rollout.</p>
+                    </div>
+                  ) : (
+                    <div className="prose prose-lg max-w-none text-muted-foreground/90 font-serif leading-relaxed prose-headings:text-foreground prose-headings:font-sans prose-strong:text-foreground prose-a:text-primary">
+                      <ReactMarkdown 
+                        remarkPlugins={[remarkGfm]}
+                        components={{
+                          table: ({node, ...props}) => (
+                            <div className="overflow-x-auto my-8 rounded-lg border bg-card/50">
+                              <table className="w-full text-sm text-left" {...props} />
+                            </div>
+                          ),
+                          thead: ({node, ...props}) => (
+                            <thead className="bg-muted text-muted-foreground uppercase text-xs font-bold tracking-wider" {...props} />
+                          ),
+                          th: ({node, ...props}) => (
+                            <th className="px-6 py-4 border-b whitespace-nowrap" {...props} />
+                          ),
+                          td: ({node, ...props}) => (
+                            <td className="px-6 py-4 border-b last:border-0" {...props} />
+                          ),
+                          tr: ({node, ...props}) => (
+                            <tr className="hover:bg-muted/50 transition-colors" {...props} />
+                          )
+                        }}
+                      >
+                        {section.content}
+                      </ReactMarkdown>
+                    </div>
+                  )}
                 </section>
               ))}
             </div>
