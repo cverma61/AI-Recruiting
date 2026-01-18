@@ -14,14 +14,14 @@ export function Footer() {
           </p>
           <p className="text-sm text-gray-400">
             Made with ❤️ by{" "}
-            <Link
+            <a
               href="https://supaflow.digital"
               target="_blank"
               rel="noopener noreferrer"
               className="underline"
             >
               Supaflow Studio
-            </Link>
+            </a>
           </p>
         </div>
         <div className="flex flex-col md:flex-row gap-12 md:gap-24">
