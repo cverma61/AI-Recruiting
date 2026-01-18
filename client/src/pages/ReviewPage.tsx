@@ -11,6 +11,7 @@ import stockImage from '@assets/stock_images/abstract_digital_net_94d5aa42.jpg';
 import { useRoute } from "wouter";
 import { Progress } from "@/components/ui/progress";
 import { Footer } from "@/components/layout/Footer";
+import { useCanonical } from "@/hooks/useCanonical";
 
 const CXPillarsRubric = () => {
   const pillars = [
@@ -55,6 +56,9 @@ const CXPillarsRubric = () => {
 export default function ReviewPage() {
   const [, params] = useRoute("/articles/:slug");
   const slug = params?.slug;
+  
+  // SEO Canonical Tag
+  useCanonical(slug ? `/articles/${slug}` : undefined);
   
   // Find article from new library
   const dynamicArticle = articles.find(a => a.slug === slug);

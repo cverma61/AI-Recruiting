@@ -3,10 +3,21 @@ import { articles, Article } from "@/lib/articles";
 import { ArrowRight, Search, Filter } from "lucide-react";
 import { Link } from "wouter";
 import { useState } from "react";
+import { useCanonical } from "@/hooks/useCanonical";
 
 import { Footer } from "@/components/layout/Footer";
 
 export default function CategoryPage({ category, title, description }: { category: string, title: string, description: string }) {
+  // Map category to slug for canonical URL
+  const slugMap: Record<string, string> = {
+    "Buyer Guide": "buyer-guides",
+    "Comparison": "comparisons",
+    "Review": "reviews",
+    "Resource": "resources"
+  };
+  
+  useCanonical(`/${slugMap[category] || ""}`);
+
   const [search, setSearch] = useState("");
   const filteredArticles = articles.filter(a => 
     a.category === category && 

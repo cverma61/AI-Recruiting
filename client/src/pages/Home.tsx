@@ -3,8 +3,11 @@ import { Footer } from "@/components/layout/Footer";
 import { articles } from "@/lib/articles";
 import { ArrowRight, ChevronRight } from "lucide-react";
 import { Link } from "wouter";
+import { useCanonical } from "@/hooks/useCanonical";
 
 export default function Home() {
+  useCanonical("/");
+
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
