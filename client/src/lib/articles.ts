@@ -3406,7 +3406,7 @@ High-volume recruiting success is less about any single feature and more about o
     category: "Buyer Guide",
     author: "Editorial Team",
     readTime: "12 min read",
-    content: \`Light industrial and warehouse hiring is different from most knowledge work recruiting. It is a funnel game with a clock running. Candidates apply on a break, between shifts, or on a phone with spotty service. If you do not reach them quickly and get them scheduled, you lose them. If you do not keep quality consistent, supervisors stop trusting the pipeline and go back to “send me everyone” which increases churn and burn.
+    content: `Light industrial and warehouse hiring is different from most knowledge work recruiting. It is a funnel game with a clock running. Candidates apply on a break, between shifts, or on a phone with spotty service. If you do not reach them quickly and get them scheduled, you lose them. If you do not keep quality consistent, supervisors stop trusting the pipeline and go back to “send me everyone” which increases churn and burn.
 
 The best AI recruiting stacks for hourly work balance three things.
 
@@ -3850,7 +3850,7 @@ You need audit logs, retention controls, exportable artifacts, and transparent e
 4. Validate artifacts early  
    Get legal, HR, and security to review outputs before you scale
 
-When you do this well, hourly hiring stops feeling like chaos. It becomes a measurable system that improves over time.\`,
+When you do this well, hourly hiring stops feeling like chaos. It becomes a measurable system that improves over time.`,
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
