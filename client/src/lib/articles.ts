@@ -47,24 +47,6 @@ export const articles: Article[] = [
 
 ---
 
-## Table of contents
-
-- How we evaluated
-- What each product is
-- Best fit and not a fit
-- Feature comparison
-- Bias controls, audits, and defensibility
-- Fraud, identity, and screening integrity
-- ATS integrations and workflow automation
-- Support and implementation experience
-- Pricing and ROI drivers
-- Limitations and what to validate
-- Demo script and buyer checklist
-- FAQs
-- Verdict
-
----
-
 ## How we evaluated
 
 We focused on what matters in real deployments.
