@@ -5,8 +5,6 @@ import { ArrowRight, ChevronRight } from "lucide-react";
 import { Link } from "wouter";
 
 export default function Home() {
-  const latestArticles = articles.slice(0, 6);
-  
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
@@ -57,35 +55,54 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Latest Articles */}
-      <section className="py-24 bg-gray-50">
-        <div className="container mx-auto px-4 md:px-8">
-          <h2 className="text-3xl font-bold mb-12 text-gray-900 text-center">Latest Updates</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {latestArticles.map((article) => (
-              <Link key={article.slug} href={`/articles/${article.slug}`}>
-                <div className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition-all cursor-pointer group h-full flex flex-col">
-                  <div className="p-8 flex-1">
-                    <span className="text-[10px] font-bold text-primary uppercase tracking-widest mb-4 block">
-                      {article.category}
-                    </span>
-                    <h3 className="text-2xl font-bold mb-4 group-hover:text-primary transition-colors leading-tight">
-                      {article.title}
-                    </h3>
-                    <p className="text-gray-600 font-serif leading-relaxed line-clamp-3">
-                      {article.meta_description}
-                    </p>
+      {/* Latest Articles by Category */}
+      {["Buyer Guide", "Comparison", "Review", "Resource"].map((category) => {
+        const categoryArticles = articles
+          .filter(a => a.category === category)
+          .slice(0, 3);
+
+        if (categoryArticles.length === 0) return null;
+
+        const categorySlug = category.toLowerCase().replace(" ", "-") + "s";
+        
+        return (
+          <section key={category} className="py-20 bg-gray-50 border-b last:border-0">
+            <div className="container mx-auto px-4 md:px-8">
+              <div className="flex items-center justify-between mb-12">
+                <h2 className="text-3xl font-bold text-gray-900">Latest {category}s</h2>
+                <Link href={`/${categorySlug}`}>
+                  <div className="flex items-center gap-2 text-primary font-bold cursor-pointer hover:underline">
+                    View All <ArrowRight className="w-4 h-4" />
                   </div>
-                  <div className="p-8 pt-0 mt-auto flex items-center justify-between border-t border-gray-100 pt-6">
-                    <span className="text-xs font-bold text-gray-400">{article.updated}</span>
-                    <ArrowRight className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" />
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+                </Link>
+              </div>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {categoryArticles.map((article) => (
+                  <Link key={article.slug} href={`/articles/${article.slug}`}>
+                    <div className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition-all cursor-pointer group h-full flex flex-col">
+                      <div className="p-8 flex-1">
+                        <span className="text-[10px] font-bold text-primary uppercase tracking-widest mb-4 block">
+                          {article.category}
+                        </span>
+                        <h3 className="text-2xl font-bold mb-4 group-hover:text-primary transition-colors leading-tight">
+                          {article.title}
+                        </h3>
+                        <p className="text-gray-600 font-serif leading-relaxed line-clamp-3">
+                          {article.meta_description}
+                        </p>
+                      </div>
+                      <div className="p-8 pt-0 mt-auto flex items-center justify-between border-t border-gray-100 pt-6">
+                        <span className="text-xs font-bold text-gray-400">{article.updated}</span>
+                        <ArrowRight className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" />
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        );
+      })}
 
       <Footer />
     </div>
