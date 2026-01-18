@@ -24,7 +24,7 @@ export const articles: Article[] = [
     category: "Resource",
     author: "Editorial Team",
     readTime: "12 min read",
-    content: \`AI recruiting is full of overloaded language. Vendors use the same words to mean very different things. This glossary translates common terms into concrete, testable definitions so buyers can compare products without getting trapped in buzzwords.
+    content: `AI recruiting is full of overloaded language. Vendors use the same words to mean very different things. This glossary translates common terms into concrete, testable definitions so buyers can compare products without getting trapped in buzzwords.
 
 ## How to use this glossary
 - Use it as a reference while you evaluate tools, run pilots, and read product comparisons
