@@ -9972,4 +9972,5 @@ If you operate in a high compliance environment or need deep ATS integrations wi
         "@id": "/articles/heymilo-review"
       }
     }
-  },
+  }
+];
