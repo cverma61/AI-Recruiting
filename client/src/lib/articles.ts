@@ -24,7 +24,7 @@ export const articles: Article[] = [
     category: "Comparison",
     author: "Editorial Team",
     readTime: "10 min read",
-    content: \`AI-led phone screens are no longer a novelty. For high-volume roles, they can be the difference between a hiring team that keeps up and one that drowns in backlogs.
+    content: `AI-led phone screens are no longer a novelty. For high-volume roles, they can be the difference between a hiring team that keeps up and one that drowns in backlogs.
 
 But the category is messy. Many tools can hold a conversation. Far fewer can produce reviewer-friendly evidence, stand up to governance reviews, and keep quality consistent when you scale across recruiters, sites, and geographies.
 
@@ -361,7 +361,7 @@ Be explicit. Tell candidates why you use the screen, how long it takes, what hap
 
 If you need a screening process you can defend, compare, and audit, TenzoAI is the stronger default. Its rubric-based scorecards, de-biasing layer, and artifact-first approach map cleanly to enterprise governance and large staffing workflows.
 
-If your top priority is getting more interviews done quickly with a lighter implementation burden, AlexAI can be a practical choice, especially for SMB and mid-market teams. Just treat governance and support as first-class evaluation items, not afterthoughts.\`,
+If your top priority is getting more interviews done quickly with a lighter implementation burden, AlexAI can be a practical choice, especially for SMB and mid-market teams. Just treat governance and support as first-class evaluation items, not afterthoughts.`,
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
