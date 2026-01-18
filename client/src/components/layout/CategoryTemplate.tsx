@@ -4,6 +4,8 @@ import { ArrowRight, Search, Filter } from "lucide-react";
 import { Link } from "wouter";
 import { useState } from "react";
 
+import { Footer } from "@/components/layout/Footer";
+
 export default function CategoryPage({ category, title, description }: { category: string, title: string, description: string }) {
   const [search, setSearch] = useState("");
   const filteredArticles = articles.filter(a => 
@@ -81,6 +83,8 @@ export default function CategoryPage({ category, title, description }: { categor
           )}
         </div>
       </section>
+      
+      <Footer />
     </div>
   );
 }

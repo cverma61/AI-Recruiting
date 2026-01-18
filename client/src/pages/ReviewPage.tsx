@@ -10,6 +10,7 @@ import { Calendar, Clock, User, Share2, Twitter, Linkedin, Facebook, ArrowRight,
 import stockImage from '@assets/stock_images/abstract_digital_net_94d5aa42.jpg';
 import { useRoute } from "wouter";
 import { Progress } from "@/components/ui/progress";
+import { Footer } from "@/components/layout/Footer";
 
 const CXPillarsRubric = () => {
   const pillars = [
@@ -270,16 +271,35 @@ export default function ReviewPage() {
               <div className="p-6 rounded-xl bg-primary/5 border border-primary/10">
                   <h4 className="font-bold text-foreground mb-4 font-sans">Share this review</h4>
                   <div className="flex gap-2">
-                      <button className="p-2 bg-background border rounded-full hover:text-[#1DA1F2] hover:border-[#1DA1F2] transition-colors">
+                      <button 
+                        onClick={() => window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(window.location.href)}`, '_blank')}
+                        className="p-2 bg-background border rounded-full hover:text-[#1DA1F2] hover:border-[#1DA1F2] transition-colors"
+                        title="Share on Twitter"
+                      >
                           <Twitter className="w-5 h-5" />
                       </button>
-                      <button className="p-2 bg-background border rounded-full hover:text-[#0077b5] hover:border-[#0077b5] transition-colors">
+                      <button 
+                        onClick={() => window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`, '_blank')}
+                        className="p-2 bg-background border rounded-full hover:text-[#0077b5] hover:border-[#0077b5] transition-colors"
+                        title="Share on LinkedIn"
+                      >
                           <Linkedin className="w-5 h-5" />
                       </button>
-                       <button className="p-2 bg-background border rounded-full hover:text-[#1877F2] hover:border-[#1877F2] transition-colors">
+                       <button 
+                        onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`, '_blank')}
+                        className="p-2 bg-background border rounded-full hover:text-[#1877F2] hover:border-[#1877F2] transition-colors"
+                        title="Share on Facebook"
+                      >
                           <Facebook className="w-5 h-5" />
                       </button>
-                      <button className="p-2 bg-background border rounded-full hover:text-primary hover:border-primary transition-colors">
+                      <button 
+                        onClick={() => {
+                          navigator.clipboard.writeText(window.location.href);
+                          // Optional: You could add a toast here
+                        }}
+                        className="p-2 bg-background border rounded-full hover:text-primary hover:border-primary transition-colors"
+                        title="Copy Link"
+                      >
                           <Share2 className="w-5 h-5" />
                       </button>
                   </div>
@@ -290,38 +310,7 @@ export default function ReviewPage() {
         </div>
       </div>
       
-      {/* Footer */}
-      <footer className="bg-foreground text-background py-16 mt-24">
-        <div className="container px-4 md:px-8 mx-auto flex flex-col md:flex-row justify-between gap-12">
-            <div className="space-y-4 max-w-sm">
-                <span className="text-xl md:text-2xl font-bold tracking-tight text-background font-sans whitespace-nowrap">
-                  AI Recruiting <span className="text-primary">Insider</span>
-                </span>
-                <p className="text-sm text-gray-400">
-                    Trusted software reviews for modern teams. We help you choose the right tools for your stack.
-                </p>
-            </div>
-            <div className="flex flex-col md:flex-row gap-12 md:gap-24">
-                <div>
-                    <h4 className="font-bold mb-4">Explore</h4>
-                    <ul className="space-y-2 text-sm text-gray-400">
-                        <li className="hover:text-white cursor-pointer">Buyer Guides</li>
-                        <li className="hover:text-white cursor-pointer">Comparisons</li>
-                        <li className="hover:text-white cursor-pointer">Reviews</li>
-                        <li className="hover:text-white cursor-pointer">Resources</li>
-                    </ul>
-                </div>
-                 <div>
-                    <h4 className="font-bold mb-4">Company</h4>
-                    <ul className="space-y-2 text-sm text-gray-400">
-                        <li className="hover:text-white cursor-pointer">About Us</li>
-                        <li className="hover:text-white cursor-pointer">Editorial Policy</li>
-                        <li className="hover:text-white cursor-pointer">Contact</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
