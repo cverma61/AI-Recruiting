@@ -650,20 +650,6 @@ AI recruiting vendors rarely publish list prices and discounts vary widely by vo
 
 ---
 
-## Table of contents
-
-1. [Why pricing feels opaque](#why-pricing-feels-opaque)  
-2. [Pricing model cheat sheet](#pricing-model-cheat-sheet)  
-3. [Benchmarks by product category](#benchmarks-by-product-category)  
-4. [What actually drives cost](#what-actually-drives-cost)  
-5. [How to normalize proposals](#how-to-normalize-proposals)  
-6. [Hidden and variable fees](#hidden-and-variable-fees)  
-7. [Budget worksheets](#budget-worksheets)  
-8. [Negotiation checklist](#negotiation-checklist)  
-9. [Voice AI buyer notes](#voice-ai-buyer-notes)  
-10. [Where Tenzo fits](#where-tenzo-fits)  
-
----
 
 ## Why pricing feels opaque
 
