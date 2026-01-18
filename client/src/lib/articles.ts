@@ -14,7 +14,7 @@ export interface Article {
 }
 
 export const articles: Article[] = [
-  },
+  // Comparisons
   {
     title: "Tenzo vs ConverzAI: Structured Interviews vs Tri-Channel Throughput",
     slug: "tenzo-vs-converzai",
