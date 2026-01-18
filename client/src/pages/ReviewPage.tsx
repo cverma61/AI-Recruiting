@@ -24,9 +24,9 @@ export default function ReviewPage() {
     author: dynamicArticle?.author || "Editorial Team",
     readTime: dynamicArticle?.readTime || "",
     tags: dynamicArticle?.tags || [],
-    verdict: purplefishReview.verdict, // Mock verdict for now
+    verdict: null,
     sections: dynamicArticle ? [{ id: "content", title: "Article Content", content: dynamicArticle.content }] : [],
-    alternatives: purplefishReview.alternatives
+    alternatives: []
   };
 
   if (!dynamicArticle && !useStaticPurplefish) {
@@ -84,28 +84,34 @@ export default function ReviewPage() {
           
           {/* Main Content Area */}
           <main className="lg:col-span-8 space-y-12">
-            {/* Introduction - styled as lead text */}
-            <div className="prose prose-lg md:prose-xl max-w-none text-foreground font-serif leading-loose first-letter:text-5xl first-letter:font-bold first-letter:text-primary first-letter:mr-1 first-letter:float-left mb-12">
-              <p>
-                Purplefish is a voice screening platform designed to automate first round phone screens and push the results back into your ATS. It is typically evaluated by staffing and talent teams that want to reduce time spent on repetitive screening calls while keeping recruiters working inside their system of record.
-              </p>
-              <p className="text-base text-muted-foreground">
-                  This review focuses on what Purplefish does well, where buyers should be realistic, and what to validate in a demo and pilot. It also includes common alternatives for teams that need more structured scoring and stronger audit artifacts.
-              </p>
-            </div>
+            {/* Introduction - styled as lead text - ONLY for static Purplefish review */}
+            {useStaticPurplefish && (
+              <div className="prose prose-lg md:prose-xl max-w-none text-foreground font-serif leading-loose first-letter:text-5xl first-letter:font-bold first-letter:text-primary first-letter:mr-1 first-letter:float-left mb-12">
+                <p>
+                  Purplefish is a voice screening platform designed to automate first round phone screens and push the results back into your ATS. It is typically evaluated by staffing and talent teams that want to reduce time spent on repetitive screening calls while keeping recruiters working inside their system of record.
+                </p>
+                <p className="text-base text-muted-foreground">
+                    This review focuses on what Purplefish does well, where buyers should be realistic, and what to validate in a demo and pilot. It also includes common alternatives for teams that need more structured scoring and stronger audit artifacts.
+                </p>
+              </div>
+            )}
 
-            <div id="verdict">
-                <Verdict {...verdict} />
-            </div>
+            {verdict && (
+              <div id="verdict">
+                  <Verdict {...verdict} />
+              </div>
+            )}
 
             {/* Dynamic Sections */}
             <div className="space-y-16">
               {sections.map((section) => (
                 <section key={section.id} id={section.id} className="scroll-mt-24 group">
-                  <h2 className="text-2xl md:text-3xl font-bold font-sans text-foreground mb-6 flex items-center gap-3">
-                    <span className="w-1.5 h-8 bg-primary rounded-full group-hover:h-10 transition-all duration-300" />
-                    {section.title}
-                  </h2>
+                  {section.title !== "Article Content" && (
+                    <h2 className="text-2xl md:text-3xl font-bold font-sans text-foreground mb-6 flex items-center gap-3">
+                      <span className="w-1.5 h-8 bg-primary rounded-full group-hover:h-10 transition-all duration-300" />
+                      {section.title}
+                    </h2>
+                  )}
                   <div className="prose prose-lg max-w-none text-muted-foreground/90 font-serif leading-relaxed prose-headings:text-foreground prose-headings:font-sans prose-strong:text-foreground prose-a:text-primary">
                     <ReactMarkdown>{section.content}</ReactMarkdown>
                   </div>
@@ -114,27 +120,29 @@ export default function ReviewPage() {
             </div>
 
              {/* Alternatives Section */}
-             <section id="alternatives" className="scroll-mt-24 pt-16 border-t">
-                <h2 className="text-2xl md:text-3xl font-bold font-sans text-foreground mb-8">
-                    Top Alternatives
-                </h2>
-                <div className="grid md:grid-cols-2 gap-6">
-                    {alternatives.map((alt) => (
-                        <div key={alt.name} className="p-6 rounded-xl border bg-card hover:shadow-lg hover:border-primary/50 transition-all duration-300 group">
-                            <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">{alt.name}</h3>
-                            <div className="inline-block px-2 py-1 bg-secondary text-secondary-foreground text-xs font-semibold rounded mb-4">
-                                {alt.bestFor}
-                            </div>
-                            <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                                {alt.description}
-                            </p>
-                            <a href="#" className="inline-flex items-center text-sm font-bold text-primary hover:underline">
-                                Read Comparison <ArrowRight className="w-4 h-4 ml-1" />
-                            </a>
-                        </div>
-                    ))}
-                </div>
-             </section>
+             {alternatives && alternatives.length > 0 && (
+               <section id="alternatives" className="scroll-mt-24 pt-16 border-t">
+                  <h2 className="text-2xl md:text-3xl font-bold font-sans text-foreground mb-8">
+                      Top Alternatives
+                  </h2>
+                  <div className="grid md:grid-cols-2 gap-6">
+                      {alternatives.map((alt) => (
+                          <div key={alt.name} className="p-6 rounded-xl border bg-card hover:shadow-lg hover:border-primary/50 transition-all duration-300 group">
+                              <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">{alt.name}</h3>
+                              <div className="inline-block px-2 py-1 bg-secondary text-secondary-foreground text-xs font-semibold rounded mb-4">
+                                  {alt.bestFor}
+                              </div>
+                              <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                                  {alt.description}
+                              </p>
+                              <a href="#" className="inline-flex items-center text-sm font-bold text-primary hover:underline">
+                                  Read Comparison <ArrowRight className="w-4 h-4 ml-1" />
+                              </a>
+                          </div>
+                      ))}
+                  </div>
+               </section>
+             )}
 
           </main>
 
