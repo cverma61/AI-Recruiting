@@ -114,16 +114,16 @@ export default function ReviewPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <div className="relative w-full h-[50vh] md:h-[60vh] overflow-hidden">
+      <div className="relative w-full min-h-[50vh] md:min-h-[60vh] flex items-end overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent z-10" />
         <div className="absolute inset-0 bg-primary/20 mix-blend-multiply z-10" />
         <img 
           src={stockImage}
           alt="Abstract Technology Background"
-          className="w-full h-full object-cover animate-in fade-in zoom-in duration-1000"
+          className="absolute inset-0 w-full h-full object-cover animate-in fade-in zoom-in duration-1000"
         />
         
-        <div className="absolute bottom-0 left-0 w-full z-20 pb-12 pt-24 bg-gradient-to-t from-background to-transparent">
+        <div className="relative w-full z-20 pb-12 pt-32 bg-gradient-to-t from-background to-transparent">
           <div className="container px-4 md:px-8 max-w-5xl mx-auto">
             <div className="flex gap-2 mb-6 flex-wrap">
               {tags.map(tag => (
