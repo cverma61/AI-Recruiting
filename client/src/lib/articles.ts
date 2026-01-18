@@ -24,7 +24,7 @@ export const articles: Article[] = [
     category: "Review",
     author: "Editorial Team",
     readTime: "8 min read",
-    content: \`Tenzo is built to replace the messy first round phone screen with a repeatable voice interview that produces artifacts hiring teams can actually use. The goal is straightforward: you can explain what the system asked, how it scored, and what evidence supported the score.
+    content: `Tenzo is built to replace the messy first round phone screen with a repeatable voice interview that produces artifacts hiring teams can actually use. The goal is straightforward: you can explain what the system asked, how it scored, and what evidence supported the score.
 
 For buyers, this usually maps to three outcomes.
 
