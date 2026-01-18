@@ -333,7 +333,7 @@ Some conversational and voice agents sound polished in a demo but struggle in pr
 
 | Term | Definition | Cross-Refs |
 |---|---|---|
-| **Zero Shot** | Asking a model to perform a task without specific training examples, relying on its general capabilities. | N Shot Prompting |\`,
+| **Zero Shot** | Asking a model to perform a task without specific training examples, relying on its general capabilities. | N Shot Prompting |`,
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
