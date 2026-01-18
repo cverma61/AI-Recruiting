@@ -30,20 +30,6 @@ AI recruiting platforms can help, but only when you pick the right layer for the
 
 This guide is organized around how campus funnels actually break, and how modern tools map to each stage.
 
-## Table of contents
-
-1. [What campus hiring needs from AI](#what-campus-hiring-needs-from-ai)  
-2. [How campus funnels usually break](#how-campus-funnels-usually-break)  
-3. [The campus recruiting stack by layer](#the-campus-recruiting-stack-by-layer)  
-4. [Top picks at a glance](#top-picks-at-a-glance)  
-5. [Feature matrix](#feature-matrix)  
-6. [Vendor deep dives](#vendor-deep-dives)  
-7. [Implementation patterns](#implementation-patterns)  
-8. [Pilot playbook and KPIs](#pilot-playbook-and-kpis)  
-9. [Governance and audit readiness](#governance-and-audit-readiness)  
-10. [Buyer checklist](#buyer-checklist)  
-11. [FAQs](#faqs)
-
 ---
 
 ## What campus hiring needs from AI

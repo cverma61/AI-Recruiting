@@ -27,7 +27,25 @@ export default function ReviewPage() {
     readTime: dynamicArticle?.readTime || "",
     tags: dynamicArticle?.tags || [],
     verdict: null,
-    sections: dynamicArticle ? [{ id: "content", title: "Article Content", content: dynamicArticle.content }] : [],
+    sections: dynamicArticle ? (() => {
+      const parts = dynamicArticle.content.split(/^##\s+(.+)$/gm);
+      const sections = [];
+      
+      // Intro
+      if (parts[0]?.trim()) {
+        sections.push({ id: "intro", title: "Introduction", content: parts[0] });
+      }
+      
+      // Sections
+      for (let i = 1; i < parts.length; i += 2) {
+        sections.push({
+          id: parts[i].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, ''),
+          title: parts[i],
+          content: parts[i+1]
+        });
+      }
+      return sections;
+    })() : [],
     alternatives: [],
     jsonLd: dynamicArticle?.jsonLd
   };
