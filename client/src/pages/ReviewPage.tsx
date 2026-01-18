@@ -1,4 +1,6 @@
+import React, { useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { Navbar } from "@/components/layout/Navbar";
 import { Verdict } from "@/components/review/Verdict";
 import { TOC } from "@/components/review/TOC";
@@ -18,7 +20,7 @@ export default function ReviewPage() {
   // Fallback to existing static data if not found or if it's the specific purplefish review we already styled
   const useStaticPurplefish = slug === "purplefish-review";
   
-  const { title, date, author, readTime, tags, verdict, sections, alternatives } = useStaticPurplefish ? purplefishReview : {
+  const { title, date, author, readTime, tags, verdict, sections, alternatives, jsonLd } = useStaticPurplefish ? { ...purplefishReview, jsonLd: undefined } : {
     title: dynamicArticle?.title || "",
     date: dynamicArticle?.updated || "",
     author: dynamicArticle?.author || "Editorial Team",
@@ -26,8 +28,22 @@ export default function ReviewPage() {
     tags: dynamicArticle?.tags || [],
     verdict: null,
     sections: dynamicArticle ? [{ id: "content", title: "Article Content", content: dynamicArticle.content }] : [],
-    alternatives: []
+    alternatives: [],
+    jsonLd: dynamicArticle?.jsonLd
   };
+
+  useEffect(() => {
+    if (jsonLd) {
+      const script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.text = JSON.stringify(jsonLd);
+      document.head.appendChild(script);
+
+      return () => {
+        document.head.removeChild(script);
+      };
+    }
+  }, [jsonLd]);
 
   if (!dynamicArticle && !useStaticPurplefish) {
     return <div className="p-20 text-center font-sans">Article not found.</div>;
@@ -113,7 +129,30 @@ export default function ReviewPage() {
                     </h2>
                   )}
                   <div className="prose prose-lg max-w-none text-muted-foreground/90 font-serif leading-relaxed prose-headings:text-foreground prose-headings:font-sans prose-strong:text-foreground prose-a:text-primary">
-                    <ReactMarkdown>{section.content}</ReactMarkdown>
+                    <ReactMarkdown 
+                      remarkPlugins={[remarkGfm]}
+                      components={{
+                        table: ({node, ...props}) => (
+                          <div className="overflow-x-auto my-8 rounded-lg border bg-card/50">
+                            <table className="w-full text-sm text-left" {...props} />
+                          </div>
+                        ),
+                        thead: ({node, ...props}) => (
+                          <thead className="bg-muted text-muted-foreground uppercase text-xs font-bold tracking-wider" {...props} />
+                        ),
+                        th: ({node, ...props}) => (
+                          <th className="px-6 py-4 border-b whitespace-nowrap" {...props} />
+                        ),
+                        td: ({node, ...props}) => (
+                          <td className="px-6 py-4 border-b last:border-0" {...props} />
+                        ),
+                        tr: ({node, ...props}) => (
+                          <tr className="hover:bg-muted/50 transition-colors" {...props} />
+                        )
+                      }}
+                    >
+                      {section.content}
+                    </ReactMarkdown>
                   </div>
                 </section>
               ))}
@@ -149,7 +188,7 @@ export default function ReviewPage() {
           {/* Sidebar */}
           <aside className="lg:col-span-4">
             <div className="sticky top-24 space-y-8">
-              <TOC sections={sections} />
+              <TOC sections={sections.map(s => ({ id: s.id, title: s.title }))} />
               
               <div className="p-6 rounded-xl bg-primary/5 border border-primary/10">
                   <h4 className="font-bold text-foreground mb-4 font-sans">Share this review</h4>
