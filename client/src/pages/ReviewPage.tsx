@@ -206,7 +206,7 @@ export default function ReviewPage() {
           {/* Sidebar */}
           <aside className="lg:col-span-4">
             <div className="sticky top-24 space-y-8">
-              <TOC sections={sections.map(s => ({ id: s.id, title: s.title }))} />
+              <TOC sections={sections.map(s => ({ id: s.id, title: s.title }))} showVerdict={!!verdict} />
               
               <div className="p-6 rounded-xl bg-primary/5 border border-primary/10">
                   <h4 className="font-bold text-foreground mb-4 font-sans">Share this review</h4>

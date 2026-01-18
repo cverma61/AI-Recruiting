@@ -3,9 +3,10 @@ import { cn } from "@/lib/utils";
 
 interface TOCProps {
   sections: { id: string; title: string }[];
+  showVerdict?: boolean;
 }
 
-export function TOC({ sections }: TOCProps) {
+export function TOC({ sections, showVerdict = false }: TOCProps) {
   const [activeId, setActiveId] = useState<string>("");
 
   useEffect(() => {
@@ -54,7 +55,8 @@ export function TOC({ sections }: TOCProps) {
             </a>
           </li>
         ))}
-        <li>
+        {showVerdict && (
+          <li>
              <a
               href="#verdict"
                className={cn(
@@ -66,7 +68,8 @@ export function TOC({ sections }: TOCProps) {
              >
                 The Verdict
              </a>
-        </li>
+          </li>
+        )}
       </ul>
     </nav>
   );
