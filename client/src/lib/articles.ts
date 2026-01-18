@@ -24,7 +24,7 @@ export const articles: Article[] = [
     category: "Comparison",
     author: "Editorial Team",
     readTime: "9 min read",
-    content: \`Buyers often put Classet and TenzoAI on the same shortlist because both aim to reduce the time and cost of early funnel screening. In practice, they tend to win for very different reasons.
+    content: `Buyers often put Classet and TenzoAI on the same shortlist because both aim to reduce the time and cost of early funnel screening. In practice, they tend to win for very different reasons.
 
 - **Classet** is commonly evaluated by **SMBs and smaller staffing teams** that want a faster way to engage candidates, move them to the right next step, and reduce coordinator workload without a heavy implementation.
 - **TenzoAI** is typically selected by **enterprises and large staffing agencies** that need **structured voice screens, transparent rubric scoring, and audit ready artifacts** that can stand up to governance reviews across teams, regions, and clients.
@@ -317,7 +317,7 @@ If you are an SMB or a smaller staffing agency that needs faster engagement and 
 
 If you are an enterprise or a large staffing agency that needs structured voice screening, **rubric based scoring**, and **audit ready artifacts** that keep bias controls and compliance front and center, **TenzoAI** is typically the stronger option.
 
-The right answer is the one that fits your workflow and your governance reality. Run a short pilot with real roles, validate integration depth, and include hiring managers in the review so you can measure trust in the outputs.\`,
+The right answer is the one that fits your workflow and your governance reality. Run a short pilot with real roles, validate integration depth, and include hiring managers in the review so you can measure trust in the outputs.`,
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
