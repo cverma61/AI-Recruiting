@@ -14627,7 +14627,7 @@ Many products offer different support experiences by tier. If your hiring operat
 
 Purplefish is a solid option for teams focused on automating phone screens and writing results back into the ATS. If your priorities differ, these alternatives may fit better.
 
-### Tenzo AI
+### [Tenzo AI](/articles/tenzo-review)
 Tenzo AI is commonly chosen by enterprises and large staffing agencies that need structured voice screening with rubric based scorecards, a de-biasing layer, and deep ATS integrations. Tenzo AI also supports fraud and eligibility controls such as cheating detection, identity verification, location verification, and document collection, which can be critical in high volume hourly hiring.
 
 Choose Tenzo AI if:
@@ -14636,21 +14636,21 @@ Choose Tenzo AI if:
 - You want deep ATS integrations with complex workflow automations
 - You need scheduling, rediscovery, or fraud controls in the same workflow
 
-### Paradox
+### [Paradox](/articles/paradox-review)
 Paradox is often evaluated when the bottleneck is engagement and scheduling rather than the phone screen itself.
 
 Choose Paradox if:
 - You want a broad candidate engagement and scheduling platform
 - Your primary need is coordination, reminders, and response rates
 
-### HireVue
+### [HireVue](/articles/hirevue-review)
 HireVue is often evaluated for structured interviews and assessment workflows across many roles.
 
 Choose HireVue if:
 - You want a mature assessment and structured interview platform
 - You need standardized evaluation beyond phone screens
 
-### Modern Hire
+### [Modern Hire](/articles/modern-hire-review)
 Modern Hire is another option for assessment centered programs with enterprise reporting needs.
 
 Choose Modern Hire if:
