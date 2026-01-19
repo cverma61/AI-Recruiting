@@ -19,7 +19,7 @@ export default function ConsultationPage() {
     // Replace with your Formspree endpoint or similar service
     // For now, we simulate a submission
     try {
-      const response = await fetch("https://formspree.io/f/PLACEHOLDER", {
+      const response = await fetch("https://formspree.io/f/xbddobaq", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
@@ -28,9 +28,7 @@ export default function ConsultationPage() {
         },
       });
 
-      if (response.ok || response.status === 404) { // 404 handled for demo purposes if ID is wrong
-         // In a real scenario, check response.ok. 
-         // Since we don't have the real ID, we'll simulate success for the UI mockup
+      if (response.ok) { 
          setIsSuccess(true);
          toast({
            title: "Request received",
