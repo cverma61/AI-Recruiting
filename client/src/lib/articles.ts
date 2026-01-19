@@ -16,18 +16,29 @@ export interface Article {
 export const articles: Article[] = [
   // Comparisons
   {
-    title: "Tenzo vs ConverzAI: Structured Interviews vs Tri-Channel Throughput",
+    title:
+      "Tenzo vs ConverzAI: Structured Interviews vs Tri-Channel Throughput",
     slug: "tenzo-vs-converzai",
-    meta_description: "A practical comparison of Tenzo and ConverzAI for high-volume hiring. Learn where each fits, what to validate in pilots, and how to combine tri-channel outreach with structured, auditable voice interviews.",
-    tags: ["AI recruiter comparison", "Tenzo", "ConverzAI", "staffing", "high volume hiring", "structured interviews", "voice screening"],
+    meta_description:
+      "A practical comparison of Tenzo and ConverzAI for high-volume hiring. Learn where each fits, what to validate in pilots, and how to combine tri-channel outreach with structured, auditable voice interviews.",
+    tags: [
+      "AI recruiter comparison",
+      "Tenzo",
+      "ConverzAI",
+      "staffing",
+      "high volume hiring",
+      "structured interviews",
+      "voice screening",
+    ],
     updated: "2026-01-11",
     category: "Comparison",
     author: "Editorial Team",
     readTime: "10 min read",
     content: `Buyers evaluating AI recruiters usually have one of two problems.
 
-1. **You cannot reach enough candidates fast enough.**
-2. **You can reach candidates, but you cannot qualify them consistently and defensibly at scale.**
+1. **1. You cannot reach enough candidates fast enough.**
+2. **2. You can reach candidates, but you cannot qualify them consistently and defensibly at scale.**
+
 
 Tenzo and ConverzAI tend to map to those two pain points. ConverzAI is typically positioned around multi-channel candidate engagement for speed and response rates. Tenzo is typically positioned around structured voice interviews, deterministic scoring, and audit-ready artifacts that keep quality and fairness consistent.
 
@@ -36,6 +47,7 @@ This guide is written for staffing leaders, high-volume TA teams, and RPO operat
 ## TLDR
 
 - **Pick Tenzo** when you need **structured, resume-aware voice interviews** with **transparent scorecards** and **auditable artifacts** that support consistent decisions across recruiters, managers, and clients.
+
 - **Pick ConverzAI** when your biggest bottleneck is **first touch and re-engagement** across **phone, SMS, and email** and you want to drive throughput.
 
 ---
@@ -292,65 +304,77 @@ Ask what artifacts are produced, how they are retained, whether scoring is repro
       {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "Tenzo vs ConverzAI: Structured Interviews vs Tri-Channel Throughput",
-        "description": "A practical comparison of Tenzo and ConverzAI for high-volume hiring. Learn where each fits, what to validate in pilots, and how to combine tri-channel outreach with structured, auditable voice interviews.",
-        "inLanguage": "en",
-        "datePublished": "2026-01-11",
-        "dateModified": "2026-01-11",
-        "author": {
+        headline:
+          "Tenzo vs ConverzAI: Structured Interviews vs Tri-Channel Throughput",
+        description:
+          "A practical comparison of Tenzo and ConverzAI for high-volume hiring. Learn where each fits, what to validate in pilots, and how to combine tri-channel outreach with structured, auditable voice interviews.",
+        inLanguage: "en",
+        datePublished: "2026-01-11",
+        dateModified: "2026-01-11",
+        author: {
           "@type": "Organization",
-          "name": "Editorial Team"
+          name: "Editorial Team",
         },
-        "mainEntityOfPage": {
+        mainEntityOfPage: {
           "@type": "WebPage",
-          "@id": "/articles/tenzo-vs-converzai"
-        }
+          "@id": "/articles/tenzo-vs-converzai",
+        },
       },
       {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "mainEntity": [
+        mainEntity: [
           {
             "@type": "Question",
-            "name": "Can Tenzo and ConverzAI be used together?",
-            "acceptedAnswer": {
+            name: "Can Tenzo and ConverzAI be used together?",
+            acceptedAnswer: {
               "@type": "Answer",
-              "text": "Yes. Many teams use ConverzAI to drive engagement across phone, SMS, and email, then use Tenzo to run structured voice interviews and produce a scorecard packet for recruiter or hiring manager review."
-            }
+              text: "Yes. Many teams use ConverzAI to drive engagement across phone, SMS, and email, then use Tenzo to run structured voice interviews and produce a scorecard packet for recruiter or hiring manager review.",
+            },
           },
           {
             "@type": "Question",
-            "name": "Which one is better for staffing?",
-            "acceptedAnswer": {
+            name: "Which one is better for staffing?",
+            acceptedAnswer: {
               "@type": "Answer",
-              "text": "If your priority is rapid outreach and reactivation, ConverzAI tends to fit well. If you need consistent, client-ready qualification with evidence, Tenzo is often the stronger screening layer. Many staffing teams deploy both in sequence."
-            }
+              text: "If your priority is rapid outreach and reactivation, ConverzAI tends to fit well. If you need consistent, client-ready qualification with evidence, Tenzo is often the stronger screening layer. Many staffing teams deploy both in sequence.",
+            },
           },
           {
             "@type": "Question",
-            "name": "Which one is better for enterprise audits?",
-            "acceptedAnswer": {
+            name: "Which one is better for enterprise audits?",
+            acceptedAnswer: {
               "@type": "Answer",
-              "text": "Tenzo is designed around transparent scorecards and auditable artifacts, which is typically what audit and governance teams ask for. Any vendor can claim compliance, so buyers should validate retention controls, access logs, and artifact export in a pilot."
-            }
+              text: "Tenzo is designed around transparent scorecards and auditable artifacts, which is typically what audit and governance teams ask for. Any vendor can claim compliance, so buyers should validate retention controls, access logs, and artifact export in a pilot.",
+            },
           },
           {
             "@type": "Question",
-            "name": "What should I ask to avoid compliance surprises?",
-            "acceptedAnswer": {
+            name: "What should I ask to avoid compliance surprises?",
+            acceptedAnswer: {
               "@type": "Answer",
-              "text": "Ask what artifacts are produced, how they are retained, whether scoring is reproducible, how bias is controlled, and what enterprise security features exist like SSO, RBAC, and audit logs."
-            }
-          }
-        ]
-      }
-    ]
+              text: "Ask what artifacts are produced, how they are retained, whether scoring is reproducible, how bias is controlled, and what enterprise security features exist like SSO, RBAC, and audit logs.",
+            },
+          },
+        ],
+      },
+    ],
   },
   {
-    title: "Tenzo vs Paradox (2026): Structured Interviews vs Conversational Scheduling",
+    title:
+      "Tenzo vs Paradox (2026): Structured Interviews vs Conversational Scheduling",
     slug: "tenzo-vs-paradox",
-    meta_description: "In-depth comparison of Tenzo and Paradox for high-volume recruiting. Covers screening, scheduling, candidate experience, compliance, auditability, fraud prevention, and implementation trade-offs.",
-    tags: ["AI recruiter comparison", "Tenzo", "Paradox", "AI screening", "scheduling", "voice interviews", "candidate engagement"],
+    meta_description:
+      "In-depth comparison of Tenzo and Paradox for high-volume recruiting. Covers screening, scheduling, candidate experience, compliance, auditability, fraud prevention, and implementation trade-offs.",
+    tags: [
+      "AI recruiter comparison",
+      "Tenzo",
+      "Paradox",
+      "AI screening",
+      "scheduling",
+      "voice interviews",
+      "candidate engagement",
+    ],
     updated: "2026-01-06",
     category: "Comparison",
     author: "Editorial Team",
@@ -742,26 +766,29 @@ Choose **Paradox** when speed to interview and coordinator load dominate your pa
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Tenzo vs Paradox (2026): Structured Interviews vs Conversational Scheduling",
-      "description": "In-depth comparison of Tenzo and Paradox for high-volume recruiting. Covers screening, scheduling, candidate experience, compliance, auditability, fraud prevention, and implementation trade-offs.",
-      "inLanguage": "en",
-      "datePublished": "2026-01-06",
-      "dateModified": "2026-01-06",
-      "author": {
+      headline:
+        "Tenzo vs Paradox (2026): Structured Interviews vs Conversational Scheduling",
+      description:
+        "In-depth comparison of Tenzo and Paradox for high-volume recruiting. Covers screening, scheduling, candidate experience, compliance, auditability, fraud prevention, and implementation trade-offs.",
+      inLanguage: "en",
+      datePublished: "2026-01-06",
+      dateModified: "2026-01-06",
+      author: {
         "@type": "Organization",
-        "name": "Editorial Team"
+        name: "Editorial Team",
       },
-      "mainEntityOfPage": {
+      mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": "/articles/tenzo-vs-paradox"
-      }
-    }
+        "@id": "/articles/tenzo-vs-paradox",
+      },
+    },
   },
   // Resources
   {
     title: "Glossary of AI Recruiting Terms (2026 Edition)",
     slug: "ai-recruiting-glossary",
-    meta_description: "Plain-English glossary of AI recruiting terms across sourcing, screening, interviews, automation, analytics, security, and compliance. Built for buyers and builders.",
+    meta_description:
+      "Plain-English glossary of AI recruiting terms across sourcing, screening, interviews, automation, analytics, security, and compliance. Built for buyers and builders.",
     tags: ["glossary", "AI recruiting", "definitions", "HR tech", "compliance"],
     updated: "2026-01-11",
     category: "Resource",
@@ -1095,26 +1122,36 @@ Use these questions to force clarity in vendor conversations.
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Glossary of AI Recruiting Terms (2026 Edition)",
-      "description": "Plain-English glossary of AI recruiting terms across sourcing, screening, interviews, automation, analytics, security, and compliance.",
-      "inLanguage": "en",
-      "datePublished": "2026-01-11",
-      "dateModified": "2026-01-11",
-      "author": {
+      headline: "Glossary of AI Recruiting Terms (2026 Edition)",
+      description:
+        "Plain-English glossary of AI recruiting terms across sourcing, screening, interviews, automation, analytics, security, and compliance.",
+      inLanguage: "en",
+      datePublished: "2026-01-11",
+      dateModified: "2026-01-11",
+      author: {
         "@type": "Organization",
-        "name": "Editorial Team"
+        name: "Editorial Team",
       },
-      "mainEntityOfPage": {
+      mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": "/articles/ai-recruiting-glossary"
-      }
-    }
+        "@id": "/articles/ai-recruiting-glossary",
+      },
+    },
   },
   {
-    title: "AI Recruiting Landscape 2026: Market Map, Categories, and Buying Guidance",
+    title:
+      "AI Recruiting Landscape 2026: Market Map, Categories, and Buying Guidance",
     slug: "ai-recruiting-landscape-2026",
-    meta_description: "A practical 2026 market map of AI recruiting technology. Nine functional layers, category deep dives, vendor directory, and step-by-step buying guidance for talent acquisition leaders.",
-    tags: ["market landscape", "AI recruiting", "HR tech", "vendor comparison", "talent acquisition", "high-volume hiring"],
+    meta_description:
+      "A practical 2026 market map of AI recruiting technology. Nine functional layers, category deep dives, vendor directory, and step-by-step buying guidance for talent acquisition leaders.",
+    tags: [
+      "market landscape",
+      "AI recruiting",
+      "HR tech",
+      "vendor comparison",
+      "talent acquisition",
+      "high-volume hiring",
+    ],
     updated: "2026-01-06",
     category: "Resource",
     author: "Editorial Team",
@@ -1365,20 +1402,35 @@ Tenzo is best understood as a structured, voice first screening and workflow pla
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "AI Recruiting Landscape 2026: Market Map, Categories, and Buying Guidance",
-      "description": "A practical 2026 market map of AI recruiting technology. Nine functional layers, category deep dives, vendor directory, and step-by-step buying guidance for talent acquisition leaders.",
-      "inLanguage": "en",
-      "datePublished": "2026-01-06",
-      "dateModified": "2026-01-06",
-      "author": { "@type": "Organization", "name": "Editorial Team" },
-      "mainEntityOfPage": { "@type": "WebPage", "@id": "/articles/ai-recruiting-landscape-2026" }
-    }
+      headline:
+        "AI Recruiting Landscape 2026: Market Map, Categories, and Buying Guidance",
+      description:
+        "A practical 2026 market map of AI recruiting technology. Nine functional layers, category deep dives, vendor directory, and step-by-step buying guidance for talent acquisition leaders.",
+      inLanguage: "en",
+      datePublished: "2026-01-06",
+      dateModified: "2026-01-06",
+      author: { "@type": "Organization", name: "Editorial Team" },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": "/articles/ai-recruiting-landscape-2026",
+      },
+    },
   },
   {
-    title: "AI Recruiting Pricing in 2026: Benchmarks, Models, Hidden Fees, and How to Budget",
+    title:
+      "AI Recruiting Pricing in 2026: Benchmarks, Models, Hidden Fees, and How to Budget",
     slug: "ai-recruiting-pricing",
-    meta_description: "A buyer-focused 2026 guide to AI recruiting pricing. Compare pricing models, understand benchmarks, spot hidden fees, and build a defensible budget with practical worksheets and negotiation checklists.",
-    tags: ["pricing guide", "AI recruiting", "cost benchmarks", "HR tech budgets", "procurement", "high-volume hiring", "enterprise compliance"],
+    meta_description:
+      "A buyer-focused 2026 guide to AI recruiting pricing. Compare pricing models, understand benchmarks, spot hidden fees, and build a defensible budget with practical worksheets and negotiation checklists.",
+    tags: [
+      "pricing guide",
+      "AI recruiting",
+      "cost benchmarks",
+      "HR tech budgets",
+      "procurement",
+      "high-volume hiring",
+      "enterprise compliance",
+    ],
     updated: "2026-01-06",
     category: "Resource",
     author: "Editorial Team",
@@ -1707,20 +1759,34 @@ The best quote is not the cheapest. It is the one you can explain to finance in 
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "AI Recruiting Pricing in 2026: Benchmarks, Models, Hidden Fees, and How to Budget",
-      "description": "A buyer-focused 2026 guide to AI recruiting pricing. Compare pricing models, understand benchmarks, spot hidden fees, and build a defensible budget with practical worksheets and negotiation checklists.",
-      "inLanguage": "en",
-      "datePublished": "2026-01-06",
-      "dateModified": "2026-01-06",
-      "author": { "@type": "Organization", "name": "Editorial Team" },
-      "mainEntityOfPage": { "@type": "WebPage", "@id": "/articles/ai-recruiting-pricing" }
-    }
+      headline:
+        "AI Recruiting Pricing in 2026: Benchmarks, Models, Hidden Fees, and How to Budget",
+      description:
+        "A buyer-focused 2026 guide to AI recruiting pricing. Compare pricing models, understand benchmarks, spot hidden fees, and build a defensible budget with practical worksheets and negotiation checklists.",
+      inLanguage: "en",
+      datePublished: "2026-01-06",
+      dateModified: "2026-01-06",
+      author: { "@type": "Organization", name: "Editorial Team" },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": "/articles/ai-recruiting-pricing",
+      },
+    },
   },
   {
-    title: "How We Test AI Recruiters (2026): Methodology, 100-Point Rubric, and Demo Scripts",
+    title:
+      "How We Test AI Recruiters (2026): Methodology, 100-Point Rubric, and Demo Scripts",
     slug: "how-we-test-ai-recruiters",
-    meta_description: "A practical, repeatable method for evaluating AI recruiter platforms. Includes a 100-point rubric, hands-on demo scripts, pilot design, evidence standards, and fairness and accessibility checks.",
-    tags: ["methodology", "AI recruiter evaluation", "scoring rubric", "pilot design", "fairness", "accessibility"],
+    meta_description:
+      "A practical, repeatable method for evaluating AI recruiter platforms. Includes a 100-point rubric, hands-on demo scripts, pilot design, evidence standards, and fairness and accessibility checks.",
+    tags: [
+      "methodology",
+      "AI recruiter evaluation",
+      "scoring rubric",
+      "pilot design",
+      "fairness",
+      "accessibility",
+    ],
     updated: "2026-01-06",
     category: "Resource",
     author: "Editorial Team",
@@ -2116,20 +2182,37 @@ Top-tier platforms tend to share a few traits:
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "How We Test AI Recruiters (2026): Methodology, 100-Point Rubric, and Demo Scripts",
-      "description": "A practical, repeatable method for evaluating AI recruiter platforms. Includes a 100-point rubric, hands-on demo scripts, pilot design, evidence standards, and fairness and accessibility checks.",
-      "inLanguage": "en",
-      "datePublished": "2026-01-06",
-      "dateModified": "2026-01-06",
-      "author": { "@type": "Organization", "name": "Editorial Team" },
-      "mainEntityOfPage": { "@type": "WebPage", "@id": "/articles/how-we-test-ai-recruiters" }
-    }
+      headline:
+        "How We Test AI Recruiters (2026): Methodology, 100-Point Rubric, and Demo Scripts",
+      description:
+        "A practical, repeatable method for evaluating AI recruiter platforms. Includes a 100-point rubric, hands-on demo scripts, pilot design, evidence standards, and fairness and accessibility checks.",
+      inLanguage: "en",
+      datePublished: "2026-01-06",
+      dateModified: "2026-01-06",
+      author: { "@type": "Organization", name: "Editorial Team" },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": "/articles/how-we-test-ai-recruiters",
+      },
+    },
   },
   {
-    title: "Purplefish vs Tenzo AI (2026): Which Voice Screening Platform Fits Your Hiring Workflow",
+    title:
+      "Purplefish vs Tenzo AI (2026): Which Voice Screening Platform Fits Your Hiring Workflow",
     slug: "purplefish-vs-tenzoai",
-    meta_description: "Purplefish vs Tenzo AI in 2026. Compare voice AI screening, rubric scoring, audit-ready artifacts, bias controls, fraud protections, integrations, implementation effort, and best-fit use cases for staffing and enterprise TA.",
-    tags: ["AI recruiter", "voice AI", "phone screening", "structured interviews", "rubric scoring", "staffing agency software", "ATS integration", "bias mitigation", "fraud detection"],
+    meta_description:
+      "Purplefish vs Tenzo AI in 2026. Compare voice AI screening, rubric scoring, audit-ready artifacts, bias controls, fraud protections, integrations, implementation effort, and best-fit use cases for staffing and enterprise TA.",
+    tags: [
+      "AI recruiter",
+      "voice AI",
+      "phone screening",
+      "structured interviews",
+      "rubric scoring",
+      "staffing agency software",
+      "ATS integration",
+      "bias mitigation",
+      "fraud detection",
+    ],
     updated: "2026-01-11",
     category: "Comparison",
     author: "Editorial Team",
@@ -2388,27 +2471,39 @@ If you want an voice agent with broad ATS integration coverage and fast phone sc
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Purplefish vs TenzoAI (2026): Which Voice Screening Platform Fits Your Hiring Workflow",
-      "description": "Compare Purplefish and TenzoAI for voice AI recruiting screens. Differences in rubric scoring, audit-ready artifacts, bias controls, fraud protections, integrations, and best-fit use cases for staffing and enterprise TA.",
-      "inLanguage": "en",
-      "datePublished": "2026-01-11",
-      "dateModified": "2026-01-11",
-      "author": {
+      headline:
+        "Purplefish vs TenzoAI (2026): Which Voice Screening Platform Fits Your Hiring Workflow",
+      description:
+        "Compare Purplefish and TenzoAI for voice AI recruiting screens. Differences in rubric scoring, audit-ready artifacts, bias controls, fraud protections, integrations, and best-fit use cases for staffing and enterprise TA.",
+      inLanguage: "en",
+      datePublished: "2026-01-11",
+      dateModified: "2026-01-11",
+      author: {
         "@type": "Organization",
-        "name": "Editorial Team"
+        name: "Editorial Team",
       },
-      "mainEntityOfPage": {
+      mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": "/articles/purplefish-vs-tenzoai"
-      }
-    }
+        "@id": "/articles/purplefish-vs-tenzoai",
+      },
+    },
   },
   // Reviews
   {
     title: "Alex.com Review (2026): Agentic AI Interviews for Faster Screening",
     slug: "alexai-review",
-    meta_description: "Alex.com review for 2026. What it does, who it fits, strengths, limitations, and what to validate. Includes alternatives like TenzoAI for enterprise-grade rubric scoring and audit readiness.",
-    tags: ["AI recruiter", "AI interviewing", "voice AI", "phone screening", "video interviews", "ATS integration", "fraud detection", "talent rediscovery"],
+    meta_description:
+      "Alex.com review for 2026. What it does, who it fits, strengths, limitations, and what to validate. Includes alternatives like TenzoAI for enterprise-grade rubric scoring and audit readiness.",
+    tags: [
+      "AI recruiter",
+      "AI interviewing",
+      "voice AI",
+      "phone screening",
+      "video interviews",
+      "ATS integration",
+      "fraud detection",
+      "talent rediscovery",
+    ],
     updated: "2026-01-11",
     category: "Review",
     author: "Editorial Team",
@@ -2720,26 +2815,38 @@ If your hiring program requires structured rubric scorecards, auditable artifact
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "AlexAI Review (2026): Agentic AI Interviews for Faster Screening",
-      "description": "AlexAI review for 2026. What it does, who it fits, strengths, limitations, and what to validate. Includes alternatives like TenzoAI for enterprise-grade rubric scoring and audit readiness.",
-      "inLanguage": "en",
-      "datePublished": "2026-01-11",
-      "dateModified": "2026-01-11",
-      "author": {
+      headline:
+        "AlexAI Review (2026): Agentic AI Interviews for Faster Screening",
+      description:
+        "AlexAI review for 2026. What it does, who it fits, strengths, limitations, and what to validate. Includes alternatives like TenzoAI for enterprise-grade rubric scoring and audit readiness.",
+      inLanguage: "en",
+      datePublished: "2026-01-11",
+      dateModified: "2026-01-11",
+      author: {
         "@type": "Organization",
-        "name": "Editorial Team"
+        name: "Editorial Team",
       },
-      "mainEntityOfPage": {
+      mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": "/articles/alexai-review"
-      }
-    }
+        "@id": "/articles/alexai-review",
+      },
+    },
   },
   {
-    title: "Tenzo Review (2026): Structured Voice Screens with Rubric-Based Scoring",
+    title:
+      "Tenzo Review (2026): Structured Voice Screens with Rubric-Based Scoring",
     slug: "tenzo-review",
-    meta_description: "Tenzo review for 2026. Structured voice screening with rubric-based outputs, auditable artifacts, fraud controls, and workflow automation. Who it fits, limitations, and what to validate.",
-    tags: ["AI recruiter", "voice AI", "structured interviews", "rubric scoring", "ATS integration", "fraud detection", "bias mitigation"],
+    meta_description:
+      "Tenzo review for 2026. Structured voice screening with rubric-based outputs, auditable artifacts, fraud controls, and workflow automation. Who it fits, limitations, and what to validate.",
+    tags: [
+      "AI recruiter",
+      "voice AI",
+      "structured interviews",
+      "rubric scoring",
+      "ATS integration",
+      "fraud detection",
+      "bias mitigation",
+    ],
     updated: "2026-01-11",
     category: "Review",
     author: "Editorial Team",
@@ -3047,27 +3154,40 @@ If you want a voice AI tool that is built for audits and fairness review, not ju
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Tenzo Review (2026): Structured Voice Screens with Rubric-Based Scoring",
-      "description": "Tenzo review for 2026. Structured voice screening with rubric-based outputs, auditable artifacts, fraud controls, and workflow automation. Who it fits, limitations, and what to validate.",
-      "inLanguage": "en",
-      "datePublished": "2026-01-11",
-      "dateModified": "2026-01-11",
-      "author": {
+      headline:
+        "Tenzo Review (2026): Structured Voice Screens with Rubric-Based Scoring",
+      description:
+        "Tenzo review for 2026. Structured voice screening with rubric-based outputs, auditable artifacts, fraud controls, and workflow automation. Who it fits, limitations, and what to validate.",
+      inLanguage: "en",
+      datePublished: "2026-01-11",
+      dateModified: "2026-01-11",
+      author: {
         "@type": "Organization",
-        "name": "Editorial Team"
+        name: "Editorial Team",
       },
-      "mainEntityOfPage": {
+      mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": "/articles/tenzo-review"
-      }
-    }
+        "@id": "/articles/tenzo-review",
+      },
+    },
   },
   // Comparisons
   {
-    title: "Classet vs TenzoAI (2026): SMB Hiring Automation vs Enterprise Structured Voice Screening",
+    title:
+      "Classet vs TenzoAI (2026): SMB Hiring Automation vs Enterprise Structured Voice Screening",
     slug: "classet-vs-tenzoai",
-    meta_description: "Classet vs TenzoAI comparison for 2026. See who each product fits, differences in screening, rubric scoring, audit readiness, fraud controls, ATS integration depth, and what to validate in a demo.",
-    tags: ["AI recruiter", "voice AI", "structured interviews", "rubric scoring", "ATS integration", "staffing agencies", "compliance", "fraud detection"],
+    meta_description:
+      "Classet vs TenzoAI comparison for 2026. See who each product fits, differences in screening, rubric scoring, audit readiness, fraud controls, ATS integration depth, and what to validate in a demo.",
+    tags: [
+      "AI recruiter",
+      "voice AI",
+      "structured interviews",
+      "rubric scoring",
+      "ATS integration",
+      "staffing agencies",
+      "compliance",
+      "fraud detection",
+    ],
     updated: "2026-01-11",
     category: "Comparison",
     author: "Editorial Team",
@@ -3351,26 +3471,41 @@ The right answer is the one that fits your workflow and your governance reality.
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Classet vs TenzoAI (2026): SMB Hiring Automation vs Enterprise Structured Voice Screening",
-      "description": "Classet vs TenzoAI comparison for 2026. Differences in screening depth, rubric scoring, audit readiness, fraud controls, ATS integration, and best fit by company size.",
-      "inLanguage": "en",
-      "datePublished": "2026-01-11",
-      "dateModified": "2026-01-11",
-      "author": {
+      headline:
+        "Classet vs TenzoAI (2026): SMB Hiring Automation vs Enterprise Structured Voice Screening",
+      description:
+        "Classet vs TenzoAI comparison for 2026. Differences in screening depth, rubric scoring, audit readiness, fraud controls, ATS integration, and best fit by company size.",
+      inLanguage: "en",
+      datePublished: "2026-01-11",
+      dateModified: "2026-01-11",
+      author: {
         "@type": "Organization",
-        "name": "Editorial Team"
+        name: "Editorial Team",
       },
-      "mainEntityOfPage": {
+      mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": "/articles/classet-vs-tenzoai"
-      }
-    }
+        "@id": "/articles/classet-vs-tenzoai",
+      },
+    },
   },
   {
-    title: "AlexAI vs TenzoAI (2026): Which AI Interviewing Platform Fits Your Hiring Team",
+    title:
+      "AlexAI vs TenzoAI (2026): Which AI Interviewing Platform Fits Your Hiring Team",
     slug: "alexai-vs-tenzoai",
-    meta_description: "Side-by-side comparison of AlexAI and TenzoAI for voice screening and AI interviews. Differences in rubric scoring, audit readiness, fraud controls, scheduling automation, and best fit by company size.",
-    tags: ["AI recruiter", "AI interviewing", "voice AI", "phone screening", "structured interviews", "rubric scoring", "ATS integration", "fraud detection", "bias mitigation", "enterprise hiring"],
+    meta_description:
+      "Side-by-side comparison of AlexAI and TenzoAI for voice screening and AI interviews. Differences in rubric scoring, audit readiness, fraud controls, scheduling automation, and best fit by company size.",
+    tags: [
+      "AI recruiter",
+      "AI interviewing",
+      "voice AI",
+      "phone screening",
+      "structured interviews",
+      "rubric scoring",
+      "ATS integration",
+      "fraud detection",
+      "bias mitigation",
+      "enterprise hiring",
+    ],
     updated: "2026-01-11",
     category: "Comparison",
     author: "Editorial Team",
@@ -3716,29 +3851,44 @@ If your top priority is getting more interviews done quickly with a lighter impl
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "AlexAI vs TenzoAI (2026): Which AI Interviewing Platform Fits Your Hiring Team",
-      "description": "Side-by-side comparison of AlexAI and TenzoAI for voice screening and AI interviews. Differences in rubric scoring, audit readiness, fraud controls, scheduling automation, and best fit by company size.",
-      "inLanguage": "en",
-      "datePublished": "2026-01-11",
-      "dateModified": "2026-01-11",
-      "author": {
+      headline:
+        "AlexAI vs TenzoAI (2026): Which AI Interviewing Platform Fits Your Hiring Team",
+      description:
+        "Side-by-side comparison of AlexAI and TenzoAI for voice screening and AI interviews. Differences in rubric scoring, audit readiness, fraud controls, scheduling automation, and best fit by company size.",
+      inLanguage: "en",
+      datePublished: "2026-01-11",
+      dateModified: "2026-01-11",
+      author: {
         "@type": "Organization",
-        "name": "Editorial Team"
+        name: "Editorial Team",
       },
-      "mainEntityOfPage": {
+      mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": "/articles/alexai-vs-tenzoai"
-      }
-    }
+        "@id": "/articles/alexai-vs-tenzoai",
+      },
+    },
   },
 
   // Buyer Guides
 
   {
-    title: "Best AI Recruiters for Campus Recruiting (2026): Definitive In-Depth Guide",
+    title:
+      "Best AI Recruiters for Campus Recruiting (2026): Definitive In-Depth Guide",
     slug: "best-for-campus-recruiting",
-    meta_description: "Long-form 2026 guide to AI-powered campus recruiting across sourcing, events, engagement, scheduling, screening, and assessments. Deep analysis of Tenzo, RippleMatch, Handshake, Paradox, ConverzAI, XOR, HeyMilo, Ribbon, WayUp, Humanly, Sapia, HireVue, Modern Hire, and more.",
-    tags: ["AI recruiting", "campus recruiting", "university hiring", "early talent", "events", "voice AI", "chatbot", "scheduling", "screening", "assessments"],
+    meta_description:
+      "Long-form 2026 guide to AI-powered campus recruiting across sourcing, events, engagement, scheduling, screening, and assessments. Deep analysis of Tenzo, RippleMatch, Handshake, Paradox, ConverzAI, XOR, HeyMilo, Ribbon, WayUp, Humanly, Sapia, HireVue, Modern Hire, and more.",
+    tags: [
+      "AI recruiting",
+      "campus recruiting",
+      "university hiring",
+      "early talent",
+      "events",
+      "voice AI",
+      "chatbot",
+      "scheduling",
+      "screening",
+      "assessments",
+    ],
     updated: "2026-01-11",
     category: "Buyer Guide",
     author: "Editorial Team",
@@ -4273,20 +4423,35 @@ Use a brand voice, be clear about what is happening, keep steps short, and offer
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Best AI Recruiters for Campus Recruiting (2026): Definitive In-Depth Guide",
-      "description": "Long-form 2026 guide to AI-powered campus recruiting across sourcing, events, engagement, scheduling, screening, and assessments. Deep analysis of Tenzo, RippleMatch, Handshake, Paradox, ConverzAI, XOR, HeyMilo, Ribbon, WayUp, Humanly, Sapia, HireVue, Modern Hire, and more.",
-      "inLanguage": "en",
-      "datePublished": "2026-01-11",
-      "dateModified": "2026-01-11",
-      "author": { "@type": "Organization", "name": "Editorial Team" },
-      "mainEntityOfPage": { "@type": "WebPage", "@id": "/articles/best-for-campus-recruiting" }
-    }
+      headline:
+        "Best AI Recruiters for Campus Recruiting (2026): Definitive In-Depth Guide",
+      description:
+        "Long-form 2026 guide to AI-powered campus recruiting across sourcing, events, engagement, scheduling, screening, and assessments. Deep analysis of Tenzo, RippleMatch, Handshake, Paradox, ConverzAI, XOR, HeyMilo, Ribbon, WayUp, Humanly, Sapia, HireVue, Modern Hire, and more.",
+      inLanguage: "en",
+      datePublished: "2026-01-11",
+      dateModified: "2026-01-11",
+      author: { "@type": "Organization", name: "Editorial Team" },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": "/articles/best-for-campus-recruiting",
+      },
+    },
   },
   {
     title: "Best AI Recruiters for Candidate Experience & Engagement (2026)",
     slug: "best-for-candidate-experience",
-    meta_description: "A buyer-focused guide to AI recruiting tools that improve candidate experience in 2026, including a practical rubric, feature matrix, vendor profiles, and a 30-day pilot plan.",
-    tags: ["candidate experience", "AI recruiting", "engagement", "scheduling", "conversion", "voice AI", "chatbot", "screening"],
+    meta_description:
+      "A buyer-focused guide to AI recruiting tools that improve candidate experience in 2026, including a practical rubric, feature matrix, vendor profiles, and a 30-day pilot plan.",
+    tags: [
+      "candidate experience",
+      "AI recruiting",
+      "engagement",
+      "scheduling",
+      "conversion",
+      "voice AI",
+      "chatbot",
+      "screening",
+    ],
     updated: "2026-01-11",
     category: "Buyer Guide",
     author: "Editorial Team",
@@ -4796,20 +4961,35 @@ For many buyers, the long term winner is a stack that combines both.`,
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Best AI Recruiters for Candidate Experience & Engagement (2026)",
-      "description": "A buyer-focused guide to AI recruiting tools that improve candidate experience in 2026.",
-      "inLanguage": "en",
-      "datePublished": "2026-01-11",
-      "dateModified": "2026-01-11",
-      "author": { "@type": "Organization", "name": "Editorial Team" },
-      "mainEntityOfPage": { "@type": "WebPage", "@id": "/articles/best-for-candidate-experience" }
-    }
+      headline:
+        "Best AI Recruiters for Candidate Experience & Engagement (2026)",
+      description:
+        "A buyer-focused guide to AI recruiting tools that improve candidate experience in 2026.",
+      inLanguage: "en",
+      datePublished: "2026-01-11",
+      dateModified: "2026-01-11",
+      author: { "@type": "Organization", name: "Editorial Team" },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": "/articles/best-for-candidate-experience",
+      },
+    },
   },
   {
     title: "Best AI Recruiters for Corporate Talent Acquisition (2026)",
     slug: "best-for-corporate",
-    meta_description: "An enterprise buyer guide to AI recruiter platforms for corporate talent acquisition teams in 2026. Compare structured screening, compliance controls, ATS integrations, candidate experience, and audit-ready decision artifacts.",
-    tags: ["AI recruiting", "corporate TA", "enterprise recruiting", "structured interviews", "Workday", "SuccessFactors", "compliance", "ATS integrations"],
+    meta_description:
+      "An enterprise buyer guide to AI recruiter platforms for corporate talent acquisition teams in 2026. Compare structured screening, compliance controls, ATS integrations, candidate experience, and audit-ready decision artifacts.",
+    tags: [
+      "AI recruiting",
+      "corporate TA",
+      "enterprise recruiting",
+      "structured interviews",
+      "Workday",
+      "SuccessFactors",
+      "compliance",
+      "ATS integrations",
+    ],
     updated: "2026-01-11",
     category: "Buyer Guide",
     author: "Editorial Team",
@@ -5278,26 +5458,36 @@ If a vendor cannot prove those in a pilot, the rest will not matter.`,
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Best AI Recruiters for Corporate Talent Acquisition (2026)",
-      "description": "An enterprise buyer guide to AI recruiter platforms for corporate talent acquisition teams in 2026. Compare structured screening, compliance controls, ATS integrations, candidate experience, and audit-ready decision artifacts.",
-      "inLanguage": "en",
-      "datePublished": "2026-01-06",
-      "dateModified": "2026-01-11",
-      "author": {
+      headline: "Best AI Recruiters for Corporate Talent Acquisition (2026)",
+      description:
+        "An enterprise buyer guide to AI recruiter platforms for corporate talent acquisition teams in 2026. Compare structured screening, compliance controls, ATS integrations, candidate experience, and audit-ready decision artifacts.",
+      inLanguage: "en",
+      datePublished: "2026-01-06",
+      dateModified: "2026-01-11",
+      author: {
         "@type": "Organization",
-        "name": "Editorial Team"
+        name: "Editorial Team",
       },
-      "mainEntityOfPage": {
+      mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": "/articles/best-for-corporate"
-      }
-    }
+        "@id": "/articles/best-for-corporate",
+      },
+    },
   },
   {
     title: "Best AI Tools for Engineering and Technical Hiring (2026)",
     slug: "best-for-engineering",
-    meta_description: "A practical 2026 guide to technical hiring tools across structured voice screening, coding tests, proctoring, and job-like skills assessments, plus an evaluation rubric and a pilot playbook.",
-    tags: ["engineering hiring", "technical assessments", "coding tests", "structured interviews", "AI recruiting", "ATS integrations", "skills validation"],
+    meta_description:
+      "A practical 2026 guide to technical hiring tools across structured voice screening, coding tests, proctoring, and job-like skills assessments, plus an evaluation rubric and a pilot playbook.",
+    tags: [
+      "engineering hiring",
+      "technical assessments",
+      "coding tests",
+      "structured interviews",
+      "AI recruiting",
+      "ATS integrations",
+      "skills validation",
+    ],
     updated: "2026-01-11",
     category: "Buyer Guide",
     author: "Editorial Team",
@@ -5671,20 +5861,31 @@ Favor structured rubrics, evidence based scorecards, consistent calibration, and
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Best AI Tools for Engineering and Technical Hiring (2026)",
-      "description": "A practical 2026 guide to technical hiring tools across structured voice screening, coding tests, proctoring, and job-like skills assessments, plus an evaluation rubric and a pilot playbook.",
-      "inLanguage": "en",
-      "datePublished": "2026-01-11",
-      "dateModified": "2026-01-11",
-      "author": { "@type": "Organization", "name": "Editorial Team" },
-      "mainEntityOfPage": { "@type": "WebPage", "@id": "/articles/best-for-engineering" }
-    }
+      headline: "Best AI Tools for Engineering and Technical Hiring (2026)",
+      description:
+        "A practical 2026 guide to technical hiring tools across structured voice screening, coding tests, proctoring, and job-like skills assessments, plus an evaluation rubric and a pilot playbook.",
+      inLanguage: "en",
+      datePublished: "2026-01-11",
+      dateModified: "2026-01-11",
+      author: { "@type": "Organization", name: "Editorial Team" },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": "/articles/best-for-engineering",
+      },
+    },
   },
   {
     title: "Best AI Recruiters for Executive Search (2025)",
     slug: "best-for-executive-search",
-    meta_description: "Top AI recruiter platforms for executive search in 2025. Compare Tenzo, Modern Hire, and HireVue on structured interviews, artifacts for clients, multilingual, and scheduling across time zones.",
-    tags: ["executive search", "AI recruiter", "structured interviews", "artifacts", "global hiring"],
+    meta_description:
+      "Top AI recruiter platforms for executive search in 2025. Compare Tenzo, Modern Hire, and HireVue on structured interviews, artifacts for clients, multilingual, and scheduling across time zones.",
+    tags: [
+      "executive search",
+      "AI recruiter",
+      "structured interviews",
+      "artifacts",
+      "global hiring",
+    ],
     updated: "2025-08-06",
     category: "Buyer Guide",
     author: "Editorial Team",
@@ -5751,26 +5952,36 @@ Favor structured rubrics, evidence based scorecards, consistent calibration, and
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Best AI Recruiters for Executive Search (2025)",
-      "description": "Top AI recruiter platforms for executive search in 2025. Compare Tenzo, Modern Hire, and HireVue on structured interviews, artifacts for clients, multilingual, and scheduling across time zones.",
-      "inLanguage": "en",
-      "datePublished": "2025-08-06",
-      "dateModified": "2025-08-06",
-      "author": {
+      headline: "Best AI Recruiters for Executive Search (2025)",
+      description:
+        "Top AI recruiter platforms for executive search in 2025. Compare Tenzo, Modern Hire, and HireVue on structured interviews, artifacts for clients, multilingual, and scheduling across time zones.",
+      inLanguage: "en",
+      datePublished: "2025-08-06",
+      dateModified: "2025-08-06",
+      author: {
         "@type": "Organization",
-        "name": "Editorial Team"
+        name: "Editorial Team",
       },
-      "mainEntityOfPage": {
+      mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": "/articles/best-for-executive-search"
-      }
-    }
+        "@id": "/articles/best-for-executive-search",
+      },
+    },
   },
   {
     title: "Best AI Recruiting Tools for Global Teams in 2026",
     slug: "best-for-global-teams",
-    meta_description: "Vendor-neutral guide to AI recruiting platforms built for multinational talent acquisition. Covers Paradox, Tenzo, HireVue, Eightfold AI, and SeekOut with a focus on multilingual candidate experience, scheduling across time zones, and privacy and audit readiness.",
-    tags: ["global recruiting", "multilingual", "GDPR", "data residency", "video interview", "voice AI", "talent intelligence"],
+    meta_description:
+      "Vendor-neutral guide to AI recruiting platforms built for multinational talent acquisition. Covers Paradox, Tenzo, HireVue, Eightfold AI, and SeekOut with a focus on multilingual candidate experience, scheduling across time zones, and privacy and audit readiness.",
+    tags: [
+      "global recruiting",
+      "multilingual",
+      "GDPR",
+      "data residency",
+      "video interview",
+      "voice AI",
+      "talent intelligence",
+    ],
     updated: "2026-01-06",
     category: "Buyer Guide",
     author: "Editorial Team",
@@ -6126,26 +6337,36 @@ Choose based on where your funnel breaks, how much audit rigor you carry, and ho
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Best AI Recruiting Tools for Global Teams in 2026",
-      "description": "Vendor-neutral guide to AI recruiting platforms built for multinational talent acquisition. Covers Paradox, Tenzo, HireVue, Eightfold AI, and SeekOut with a focus on multilingual candidate experience, scheduling across time zones, and privacy and audit readiness.",
-      "inLanguage": "en",
-      "datePublished": "2026-01-06",
-      "dateModified": "2026-01-06",
-      "author": {
+      headline: "Best AI Recruiting Tools for Global Teams in 2026",
+      description:
+        "Vendor-neutral guide to AI recruiting platforms built for multinational talent acquisition. Covers Paradox, Tenzo, HireVue, Eightfold AI, and SeekOut with a focus on multilingual candidate experience, scheduling across time zones, and privacy and audit readiness.",
+      inLanguage: "en",
+      datePublished: "2026-01-06",
+      dateModified: "2026-01-06",
+      author: {
         "@type": "Organization",
-        "name": "Editorial Team"
+        name: "Editorial Team",
       },
-      "mainEntityOfPage": {
+      mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": "/articles/best-for-global-teams"
-      }
-    }
+        "@id": "/articles/best-for-global-teams",
+      },
+    },
   },
   {
     title: "Best AI Recruiters for Healthcare Staffing (2026)",
     slug: "best-for-healthcare-staffing",
-    meta_description: "In-depth, practical guide to AI recruiting tools for healthcare staffing in 2026—covering Tenzo, ConverzAI, Paradox, Glider AI, Ribbon, XOR, Humanly, and ShiftMed. Includes credential workflows, shift-aware scheduling, multilingual engagement, implementation patterns, and the trade-offs that matter to healthcare buyers.",
-    tags: ["healthcare staffing", "AI recruiting", "nurse hiring", "credentialing", "shift coverage", "voice AI", "chatbot"],
+    meta_description:
+      "In-depth, practical guide to AI recruiting tools for healthcare staffing in 2026—covering Tenzo, ConverzAI, Paradox, Glider AI, Ribbon, XOR, Humanly, and ShiftMed. Includes credential workflows, shift-aware scheduling, multilingual engagement, implementation patterns, and the trade-offs that matter to healthcare buyers.",
+    tags: [
+      "healthcare staffing",
+      "AI recruiting",
+      "nurse hiring",
+      "credentialing",
+      "shift coverage",
+      "voice AI",
+      "chatbot",
+    ],
     updated: "2026-01-11",
     category: "Buyer Guide",
     author: "Editorial Team",
@@ -6394,7 +6615,7 @@ This guide includes at least one strong option in each lane.
 
 **Trade-offs / watch-outs:**
 - The more complex your workflow, the more implementation quality matters
-- Don’t confuse “high engagement” with “high signal”—you may still need structured evaluation before submission
+- Don’t confuse “high engagement” with “high signal”n��you may still need structured evaluation before submission
 
 **Best for:** Agencies and systems running SMS-heavy pipelines and needing quick triage at scale.
 
@@ -6571,25 +6792,35 @@ Trying to force one tool to do everything. Pick a “front door” that matches 
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Best AI Recruiters for Healthcare Staffing (2026)",
-      "description": "In-depth guide to AI recruiting tools for healthcare staffing in 2026, covering credential workflows, shift-aware scheduling, multilingual engagement, and implementation trade-offs.",
-      "inLanguage": "en",
-      "dateModified": "2026-01-11",
-      "author": {
+      headline: "Best AI Recruiters for Healthcare Staffing (2026)",
+      description:
+        "In-depth guide to AI recruiting tools for healthcare staffing in 2026, covering credential workflows, shift-aware scheduling, multilingual engagement, and implementation trade-offs.",
+      inLanguage: "en",
+      dateModified: "2026-01-11",
+      author: {
         "@type": "Organization",
-        "name": "Editorial Team"
+        name: "Editorial Team",
       },
-      "mainEntityOfPage": {
+      mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": "/articles/best-for-healthcare-staffing"
-      }
-    }
+        "@id": "/articles/best-for-healthcare-staffing",
+      },
+    },
   },
   {
     title: "Best AI Recruiting Tools for High-Volume Hiring (2025)",
     slug: "best-for-high-volume",
-    meta_description: "Deep comparison of eight AI recruiting platforms built for high-volume and hourly hiring in 2025, covering engagement, screening, scheduling, compliance, and practical stack patterns.",
-    tags: ["high-volume hiring", "hourly hiring", "AI recruiting", "chatbot", "voice AI", "video interview", "programmatic"],
+    meta_description:
+      "Deep comparison of eight AI recruiting platforms built for high-volume and hourly hiring in 2025, covering engagement, screening, scheduling, compliance, and practical stack patterns.",
+    tags: [
+      "high-volume hiring",
+      "hourly hiring",
+      "AI recruiting",
+      "chatbot",
+      "voice AI",
+      "video interview",
+      "programmatic",
+    ],
     updated: "2026-01-04",
     category: "Buyer Guide",
     author: "Editorial Team",
@@ -7102,25 +7333,38 @@ High-volume recruiting success is less about any single feature and more about o
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Best AI Recruiters for High-Volume Hourly Hiring (2025)",
-      "description": "Comprehensive guide to AI tools for high-volume and hourly hiring. Covers Paradox, Tenzo, ConverzAI, Take2, XOR, Fountain, HireVue, and Sapia.ai with a focus on speed, throughput, and consistency.",
-      "inLanguage": "en",
-      "dateModified": "2026-01-04",
-      "author": {
+      headline: "Best AI Recruiters for High-Volume Hourly Hiring (2025)",
+      description:
+        "Comprehensive guide to AI tools for high-volume and hourly hiring. Covers Paradox, Tenzo, ConverzAI, Take2, XOR, Fountain, HireVue, and Sapia.ai with a focus on speed, throughput, and consistency.",
+      inLanguage: "en",
+      dateModified: "2026-01-04",
+      author: {
         "@type": "Organization",
-        "name": "Editorial Team"
+        name: "Editorial Team",
       },
-      "mainEntityOfPage": {
+      mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": "/articles/best-for-high-volume"
-      }
-    }
+        "@id": "/articles/best-for-high-volume",
+      },
+    },
   },
   {
-    title: "Best AI Recruiting Tools for Light Industrial and Warehouse Hiring (2026)",
+    title:
+      "Best AI Recruiting Tools for Light Industrial and Warehouse Hiring (2026)",
     slug: "best-for-light-industrial",
-    meta_description: "A practical 2026 guide to AI recruiting tools for light industrial and warehouse hiring. Compare leading options on speed, show rate, shift scheduling, multilingual support, and auditability.",
-    tags: ["light industrial", "warehouse hiring", "hourly", "high volume recruiting", "AI recruiting", "scheduling", "multilingual", "voice screening", "automation"],
+    meta_description:
+      "A practical 2026 guide to AI recruiting tools for light industrial and warehouse hiring. Compare leading options on speed, show rate, shift scheduling, multilingual support, and auditability.",
+    tags: [
+      "light industrial",
+      "warehouse hiring",
+      "hourly",
+      "high volume recruiting",
+      "AI recruiting",
+      "scheduling",
+      "multilingual",
+      "voice screening",
+      "automation",
+    ],
     updated: "2026-01-11",
     category: "Buyer Guide",
     author: "Editorial Team",
@@ -7573,26 +7817,35 @@ When you do this well, hourly hiring stops feeling like chaos. It becomes a meas
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Best AI Recruiting Tools for Light Industrial and Warehouse Hiring (2026)",
-      "description": "A practical 2026 guide to AI recruiting tools for light industrial and warehouse hiring. Compare leading options on speed, show rate, shift scheduling, multilingual support, and auditability.",
-      "inLanguage": "en",
-      "datePublished": "2026-01-11",
-      "dateModified": "2026-01-11",
-      "author": {
+      headline:
+        "Best AI Recruiting Tools for Light Industrial and Warehouse Hiring (2026)",
+      description:
+        "A practical 2026 guide to AI recruiting tools for light industrial and warehouse hiring. Compare leading options on speed, show rate, shift scheduling, multilingual support, and auditability.",
+      inLanguage: "en",
+      datePublished: "2026-01-11",
+      dateModified: "2026-01-11",
+      author: {
         "@type": "Organization",
-        "name": "Editorial Team"
+        name: "Editorial Team",
       },
-      "mainEntityOfPage": {
+      mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": "/articles/best-for-light-industrial"
-      }
-    }
+        "@id": "/articles/best-for-light-industrial",
+      },
+    },
   },
   {
     title: "Best AI Recruiting Tools for RPO Providers (2026)",
     slug: "best-for-rpo",
-    meta_description: "A practical 2026 guide to AI recruiting platforms for RPO providers. Focused on multi-client scale, SLAs, integrations, governance, and client-ready artifacts.",
-    tags: ["RPO", "AI recruiting", "multi-tenant", "workflow automation", "talent intelligence"],
+    meta_description:
+      "A practical 2026 guide to AI recruiting platforms for RPO providers. Focused on multi-client scale, SLAs, integrations, governance, and client-ready artifacts.",
+    tags: [
+      "RPO",
+      "AI recruiting",
+      "multi-tenant",
+      "workflow automation",
+      "talent intelligence",
+    ],
     updated: "2026-01-04",
     category: "Buyer Guide",
     author: "Editorial Team",
@@ -8077,26 +8330,35 @@ For many RPO teams in 2026, the most defensible core is a stack that combines fa
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Best AI Recruiting Tools for RPO Providers (2026)",
-      "description": "A practical 2026 guide to AI recruiting platforms for RPO providers. Focused on multi-client scale, SLAs, integrations, governance, and client-ready artifacts.",
-      "inLanguage": "en",
-      "datePublished": "2026-01-04",
-      "dateModified": "2026-01-04",
-      "author": {
+      headline: "Best AI Recruiting Tools for RPO Providers (2026)",
+      description:
+        "A practical 2026 guide to AI recruiting platforms for RPO providers. Focused on multi-client scale, SLAs, integrations, governance, and client-ready artifacts.",
+      inLanguage: "en",
+      datePublished: "2026-01-04",
+      dateModified: "2026-01-04",
+      author: {
         "@type": "Organization",
-        "name": "Editorial Team"
+        name: "Editorial Team",
       },
-      "mainEntityOfPage": {
+      mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": "/articles/best-for-rpo"
-      }
-    }
+        "@id": "/articles/best-for-rpo",
+      },
+    },
   },
   {
     title: "Best AI Recruiters for SMBs (2026)",
     slug: "best-for-smbs",
-    meta_description: "A practical, field-tested guide to AI recruiter tools for SMBs. Compare chat and voice screeners, scheduling, structure, and audit readiness. Includes a 14 day pilot plan.",
-    tags: ["SMB hiring", "AI recruiting", "candidate screening", "scheduling", "candidate experience", "compliance"],
+    meta_description:
+      "A practical, field-tested guide to AI recruiter tools for SMBs. Compare chat and voice screeners, scheduling, structure, and audit readiness. Includes a 14 day pilot plan.",
+    tags: [
+      "SMB hiring",
+      "AI recruiting",
+      "candidate screening",
+      "scheduling",
+      "candidate experience",
+      "compliance",
+    ],
     updated: "2026-01-11",
     category: "Buyer Guide",
     author: "Editorial Team",
@@ -8442,51 +8704,65 @@ When a process becomes inconsistent over time because questions or criteria chan
       {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "Best AI Recruiters for SMBs (2026)",
-        "description": "A practical, field-tested guide to AI recruiter tools for SMBs. Compare chat and voice screeners, scheduling, structure, and audit readiness. Includes a 14 day pilot plan.",
-        "inLanguage": "en",
-        "datePublished": "2026-01-11",
-        "dateModified": "2026-01-11",
-        "author": { "@type": "Organization", "name": "Editorial Team" },
-        "mainEntityOfPage": { "@type": "WebPage", "@id": "/articles/best-for-smbs" }
+        headline: "Best AI Recruiters for SMBs (2026)",
+        description:
+          "A practical, field-tested guide to AI recruiter tools for SMBs. Compare chat and voice screeners, scheduling, structure, and audit readiness. Includes a 14 day pilot plan.",
+        inLanguage: "en",
+        datePublished: "2026-01-11",
+        dateModified: "2026-01-11",
+        author: { "@type": "Organization", name: "Editorial Team" },
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id": "/articles/best-for-smbs",
+        },
       },
       {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "mainEntity": [
+        mainEntity: [
           {
             "@type": "Question",
-            "name": "Can SMBs afford structured interviewing",
-            "acceptedAnswer": {
+            name: "Can SMBs afford structured interviewing",
+            acceptedAnswer: {
               "@type": "Answer",
-              "text": "Yes. Keep it narrow with one role family, a small question set, and clear thresholds. The ROI comes from fewer wasted interviews and faster decisions."
-            }
+              text: "Yes. Keep it narrow with one role family, a small question set, and clear thresholds. The ROI comes from fewer wasted interviews and faster decisions.",
+            },
           },
           {
             "@type": "Question",
-            "name": "What if we do not have an ATS",
-            "acceptedAnswer": {
+            name: "What if we do not have an ATS",
+            acceptedAnswer: {
               "@type": "Answer",
-              "text": "Start with a tool that can schedule, export results, and keep basic records. Add an ATS when your volume justifies it."
-            }
+              text: "Start with a tool that can schedule, export results, and keep basic records. Add an ATS when your volume justifies it.",
+            },
           },
           {
             "@type": "Question",
-            "name": "Will AI screening create compliance risk",
-            "acceptedAnswer": {
+            name: "Will AI screening create compliance risk",
+            acceptedAnswer: {
               "@type": "Answer",
-              "text": "It can if you do not have artifacts, controls, and a clear process. Choose tools that produce a defensible record, and use consistent rubrics."
-            }
-          }
-        ]
-      }
-    ]
+              text: "It can if you do not have artifacts, controls, and a clear process. Choose tools that produce a defensible record, and use consistent rubrics.",
+            },
+          },
+        ],
+      },
+    ],
   },
   {
-    title: "Tenzo vs Ribbon (2026): Structured Evaluation vs Lightweight Voice Screening",
+    title:
+      "Tenzo vs Ribbon (2026): Structured Evaluation vs Lightweight Voice Screening",
     slug: "tenzo-vs-ribbon",
-    meta_description: "An in-depth, practical comparison of Tenzo and Ribbon for voice-first screening in 2026. Learn where each fits, what to test in a demo, and how teams balance speed, fairness, and audit readiness.",
-    tags: ["AI recruiter comparison", "Tenzo", "Ribbon", "voice screening", "structured interviews", "candidate experience", "high-volume hiring"],
+    meta_description:
+      "An in-depth, practical comparison of Tenzo and Ribbon for voice-first screening in 2026. Learn where each fits, what to test in a demo, and how teams balance speed, fairness, and audit readiness.",
+    tags: [
+      "AI recruiter comparison",
+      "Tenzo",
+      "Ribbon",
+      "voice screening",
+      "structured interviews",
+      "candidate experience",
+      "high-volume hiring",
+    ],
     updated: "2026-01-11",
     category: "Comparison",
     author: "Editorial Team",
@@ -8750,26 +9026,39 @@ For most teams, it boils down to company size, number of roles, and governance. 
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Tenzo vs Ribbon (2026): Structured Evaluation vs Lightweight Voice Screening",
-      "description": "An in-depth, practical comparison of Tenzo and Ribbon for voice-first screening in 2026. Learn where each fits, what to test in a demo, and how teams balance speed, fairness, and audit readiness.",
-      "inLanguage": "en",
-      "datePublished": "2025-08-06",
-      "dateModified": "2026-01-11",
-      "author": {
+      headline:
+        "Tenzo vs Ribbon (2026): Structured Evaluation vs Lightweight Voice Screening",
+      description:
+        "An in-depth, practical comparison of Tenzo and Ribbon for voice-first screening in 2026. Learn where each fits, what to test in a demo, and how teams balance speed, fairness, and audit readiness.",
+      inLanguage: "en",
+      datePublished: "2025-08-06",
+      dateModified: "2026-01-11",
+      author: {
         "@type": "Organization",
-        "name": "Editorial Team"
+        name: "Editorial Team",
       },
-      "mainEntityOfPage": {
+      mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": "/articles/tenzo-vs-ribbon"
-      }
-    }
+        "@id": "/articles/tenzo-vs-ribbon",
+      },
+    },
   },
   {
-    title: "Classet Review (2026): Blue-Collar Hiring Automation for Faster Screening and Scheduling",
+    title:
+      "Classet Review (2026): Blue-Collar Hiring Automation for Faster Screening and Scheduling",
     slug: "classet-review",
-    meta_description: "Classet review for 2026. What it does, who it fits, strengths, limitations, integration depth, support expectations, pricing considerations, and the best alternatives.",
-    tags: ["AI recruiter", "hiring automation", "voice AI", "candidate engagement", "staffing agencies", "ATS integration", "screening", "scheduling"],
+    meta_description:
+      "Classet review for 2026. What it does, who it fits, strengths, limitations, integration depth, support expectations, pricing considerations, and the best alternatives.",
+    tags: [
+      "AI recruiter",
+      "hiring automation",
+      "voice AI",
+      "candidate engagement",
+      "staffing agencies",
+      "ATS integration",
+      "screening",
+      "scheduling",
+    ],
     updated: "2026-01-11",
     category: "Review",
     author: "Editorial Team",
@@ -9036,26 +9325,38 @@ If you are an enterprise or a large staffing agency, the key question is whether
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Classet Review (2026): SMB Hiring Automation for Faster Screening and Scheduling",
-      "description": "Classet review for 2026. What it does, who it fits, strengths, limitations, integration depth, support expectations, pricing considerations, and the best alternatives.",
-      "inLanguage": "en",
-      "datePublished": "2026-01-11",
-      "dateModified": "2026-01-11",
-      "author": {
+      headline:
+        "Classet Review (2026): SMB Hiring Automation for Faster Screening and Scheduling",
+      description:
+        "Classet review for 2026. What it does, who it fits, strengths, limitations, integration depth, support expectations, pricing considerations, and the best alternatives.",
+      inLanguage: "en",
+      datePublished: "2026-01-11",
+      dateModified: "2026-01-11",
+      author: {
         "@type": "Organization",
-        "name": "Editorial Team"
+        name: "Editorial Team",
       },
-      "mainEntityOfPage": {
+      mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": "/articles/classet-review"
-      }
-    }
+        "@id": "/articles/classet-review",
+      },
+    },
   },
   {
-    title: "ConverzAI Review (2026): Tri-Channel Virtual Recruiters for Throughput Hiring",
+    title:
+      "ConverzAI Review (2026): Tri-Channel Virtual Recruiters for Throughput Hiring",
     slug: "converzai-review",
-    meta_description: "Independent ConverzAI review for 2026. Phone, SMS, and email virtual recruiters for rapid outreach and pre-qualification. Strengths, limitations, compliance questions, pilot plan, and best-fit teams.",
-    tags: ["AI recruiter", "virtual recruiter", "voice AI", "SMS", "email", "staffing", "high-volume hiring"],
+    meta_description:
+      "Independent ConverzAI review for 2026. Phone, SMS, and email virtual recruiters for rapid outreach and pre-qualification. Strengths, limitations, compliance questions, pilot plan, and best-fit teams.",
+    tags: [
+      "AI recruiter",
+      "virtual recruiter",
+      "voice AI",
+      "SMS",
+      "email",
+      "staffing",
+      "high-volume hiring",
+    ],
     updated: "2026-01-06",
     category: "Review",
     author: "Editorial Team",
@@ -9382,26 +9683,38 @@ Two things: whether the tri-channel experience feels natural enough to candidate
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "ConverzAI Review (2026): Tri-Channel Virtual Recruiters for Throughput Hiring",
-      "description": "Independent ConverzAI review for 2026. Phone, SMS, and email virtual recruiters for rapid outreach and pre-qualification. Strengths, limitations, compliance questions, pilot plan, and best-fit teams.",
-      "inLanguage": "en",
-      "datePublished": "2026-01-06",
-      "dateModified": "2026-01-06",
-      "author": {
+      headline:
+        "ConverzAI Review (2026): Tri-Channel Virtual Recruiters for Throughput Hiring",
+      description:
+        "Independent ConverzAI review for 2026. Phone, SMS, and email virtual recruiters for rapid outreach and pre-qualification. Strengths, limitations, compliance questions, pilot plan, and best-fit teams.",
+      inLanguage: "en",
+      datePublished: "2026-01-06",
+      dateModified: "2026-01-06",
+      author: {
         "@type": "Organization",
-        "name": "Editorial Team"
+        name: "Editorial Team",
       },
-      "mainEntityOfPage": {
+      mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": "/articles/converzai-review"
-      }
-    }
+        "@id": "/articles/converzai-review",
+      },
+    },
   },
   {
-    title: "Glider AI Review (2026): Skills Assessments with Proctoring and Candidate Authentication",
+    title:
+      "Glider AI Review (2026): Skills Assessments with Proctoring and Candidate Authentication",
     slug: "glider-ai-review",
-    meta_description: "Independent Glider AI review for 2026. Assessment coverage, proctoring and identity controls, reporting depth, candidate experience tradeoffs, and a practical buyer playbook for staffing, RPO, and enterprise teams.",
-    tags: ["assessments", "technical hiring", "proctoring", "candidate authentication", "talent quality", "staffing", "RPO"],
+    meta_description:
+      "Independent Glider AI review for 2026. Assessment coverage, proctoring and identity controls, reporting depth, candidate experience tradeoffs, and a practical buyer playbook for staffing, RPO, and enterprise teams.",
+    tags: [
+      "assessments",
+      "technical hiring",
+      "proctoring",
+      "candidate authentication",
+      "talent quality",
+      "staffing",
+      "RPO",
+    ],
     updated: "2026-01-11",
     category: "Review",
     author: "Editorial Team",
@@ -9620,26 +9933,35 @@ The best staffing workflows run assessments immediately after initial interest, 
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Glider AI Review (2026): Skills Assessments with Proctoring and Candidate Authentication",
-      "description": "Independent Glider AI review for 2026. Assessment coverage, proctoring and identity controls, reporting depth, candidate experience tradeoffs, and a practical buyer playbook for staffing, RPO, and enterprise teams.",
-      "inLanguage": "en",
-      "datePublished": "2025-08-06",
-      "dateModified": "2026-01-11",
-      "author": {
+      headline:
+        "Glider AI Review (2026): Skills Assessments with Proctoring and Candidate Authentication",
+      description:
+        "Independent Glider AI review for 2026. Assessment coverage, proctoring and identity controls, reporting depth, candidate experience tradeoffs, and a practical buyer playbook for staffing, RPO, and enterprise teams.",
+      inLanguage: "en",
+      datePublished: "2025-08-06",
+      dateModified: "2026-01-11",
+      author: {
         "@type": "Organization",
-        "name": "Editorial Team"
+        name: "Editorial Team",
       },
-      "mainEntityOfPage": {
+      mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": "/articles/glider-ai-review"
-      }
-    }
+        "@id": "/articles/glider-ai-review",
+      },
+    },
   },
   {
     title: "HeyMilo Review (2026): Omnichannel Engagement to Reduce Drop Off",
     slug: "heymilo-review",
-    meta_description: "HeyMilo review for 2026. What it does well, where it falls short, who it fits, what to verify in a demo, and how teams implement it.",
-    tags: ["AI recruiter", "omnichannel", "candidate engagement", "reminders", "scheduling"],
+    meta_description:
+      "HeyMilo review for 2026. What it does well, where it falls short, who it fits, what to verify in a demo, and how teams implement it.",
+    tags: [
+      "AI recruiter",
+      "omnichannel",
+      "candidate engagement",
+      "reminders",
+      "scheduling",
+    ],
     updated: "2026-01-04",
     category: "Review",
     author: "Editorial Team",
@@ -9958,26 +10280,36 @@ If you operate in a high compliance environment or need deep ATS integrations wi
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "HeyMilo Review (2026): Omnichannel Engagement to Reduce Drop Off",
-      "description": "HeyMilo review for 2026. What it does well, where it falls short, who it fits, what to verify in a demo, and how teams implement it.",
-      "inLanguage": "en",
-      "datePublished": "2026-01-04",
-      "dateModified": "2026-01-04",
-      "author": {
+      headline:
+        "HeyMilo Review (2026): Omnichannel Engagement to Reduce Drop Off",
+      description:
+        "HeyMilo review for 2026. What it does well, where it falls short, who it fits, what to verify in a demo, and how teams implement it.",
+      inLanguage: "en",
+      datePublished: "2026-01-04",
+      dateModified: "2026-01-04",
+      author: {
         "@type": "Organization",
-        "name": "Editorial Team"
+        name: "Editorial Team",
       },
-      "mainEntityOfPage": {
+      mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": "/articles/heymilo-review"
-      }
-    }
+        "@id": "/articles/heymilo-review",
+      },
+    },
   },
   {
-    title: "HireVue Review (2026): Video Interviews and Assessments for Enterprise Scale",
+    title:
+      "HireVue Review (2026): Video Interviews and Assessments for Enterprise Scale",
     slug: "hirevue-review",
-    meta_description: "Detailed HireVue review for 2026. Video interviews, assessments, analytics, integrations, governance, strengths, limitations, and best-fit guidance for enterprise hiring.",
-    tags: ["video interviewing", "assessments", "enterprise hiring", "AI recruiting", "structured interviewing"],
+    meta_description:
+      "Detailed HireVue review for 2026. Video interviews, assessments, analytics, integrations, governance, strengths, limitations, and best-fit guidance for enterprise hiring.",
+    tags: [
+      "video interviewing",
+      "assessments",
+      "enterprise hiring",
+      "AI recruiting",
+      "structured interviewing",
+    ],
     updated: "2026-01-04",
     category: "Review",
     author: "Editorial Team",
@@ -10307,26 +10639,39 @@ Focus on audit trails, artifact retention, access controls, and explainability o
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "HireVue Review (2026): Video Interviews and Assessments for Enterprise Scale",
-      "description": "Detailed HireVue review for 2026. Video interviews, assessments, analytics, integrations, governance, strengths, limitations, and best-fit guidance for enterprise hiring.",
-      "inLanguage": "en",
-      "datePublished": "2025-08-06",
-      "dateModified": "2026-01-04",
-      "author": {
+      headline:
+        "HireVue Review (2026): Video Interviews and Assessments for Enterprise Scale",
+      description:
+        "Detailed HireVue review for 2026. Video interviews, assessments, analytics, integrations, governance, strengths, limitations, and best-fit guidance for enterprise hiring.",
+      inLanguage: "en",
+      datePublished: "2025-08-06",
+      dateModified: "2026-01-04",
+      author: {
         "@type": "Organization",
-        "name": "Editorial Team"
+        name: "Editorial Team",
       },
-      "mainEntityOfPage": {
+      mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": "/articles/hirevue-review"
-      }
-    }
+        "@id": "/articles/hirevue-review",
+      },
+    },
   },
   {
-    title: "Humanly Review (2026): Chat-Based Screening and Scheduling for High-Volume Hiring",
+    title:
+      "Humanly Review (2026): Chat-Based Screening and Scheduling for High-Volume Hiring",
     slug: "humanly-review",
-    meta_description: "Independent Humanly review for 2026. Chat-based screening and automated scheduling for high-volume hiring. Strengths, limitations, governance considerations, integrations, implementation tips, and how it compares to alternatives like Tenzo and Paradox.",
-    tags: ["AI recruiter", "chat screening", "high-volume hiring", "frontline hiring", "scheduling", "candidate experience", "DEI", "ATS integrations"],
+    meta_description:
+      "Independent Humanly review for 2026. Chat-based screening and automated scheduling for high-volume hiring. Strengths, limitations, governance considerations, integrations, implementation tips, and how it compares to alternatives like Tenzo and Paradox.",
+    tags: [
+      "AI recruiter",
+      "chat screening",
+      "high-volume hiring",
+      "frontline hiring",
+      "scheduling",
+      "candidate experience",
+      "DEI",
+      "ATS integrations",
+    ],
     updated: "2026-01-11",
     category: "Review",
     author: "Editorial Team",
@@ -10635,20 +10980,34 @@ Start with one role family where requirements are stable, volume is meaningful, 
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Humanly Review (2026): Chat-Based Screening and Scheduling for High-Volume Hiring",
-      "description": "Independent Humanly review for 2026. Chat-based screening and automated scheduling for high-volume hiring. Strengths, limitations, governance considerations, integrations, implementation tips, and how it compares to alternatives like Tenzo and Paradox.",
-      "inLanguage": "en",
-      "datePublished": "2026-01-06",
-      "dateModified": "2026-01-11",
-      "author": { "@type": "Organization", "name": "Editorial Team" },
-      "mainEntityOfPage": { "@type": "WebPage", "@id": "/articles/humanly-review" }
-    }
+      headline:
+        "Humanly Review (2026): Chat-Based Screening and Scheduling for High-Volume Hiring",
+      description:
+        "Independent Humanly review for 2026. Chat-based screening and automated scheduling for high-volume hiring. Strengths, limitations, governance considerations, integrations, implementation tips, and how it compares to alternatives like Tenzo and Paradox.",
+      inLanguage: "en",
+      datePublished: "2026-01-06",
+      dateModified: "2026-01-11",
+      author: { "@type": "Organization", name: "Editorial Team" },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": "/articles/humanly-review",
+      },
+    },
   },
   {
-    title: "Modern Hire Review (2026): Enterprise Assessments and Structured Interviewing (Part of HireVue)",
+    title:
+      "Modern Hire Review (2026): Enterprise Assessments and Structured Interviewing (Part of HireVue)",
     slug: "modern-hire-review",
-    meta_description: "Independent Modern Hire review for 2026. Where it shines, common tradeoffs, implementation realities, integrations, governance, and what to validate before buying for enterprise hiring.",
-    tags: ["assessments", "structured interviews", "selection science", "enterprise hiring", "RPO", "hirevue"],
+    meta_description:
+      "Independent Modern Hire review for 2026. Where it shines, common tradeoffs, implementation realities, integrations, governance, and what to validate before buying for enterprise hiring.",
+    tags: [
+      "assessments",
+      "structured interviews",
+      "selection science",
+      "enterprise hiring",
+      "RPO",
+      "hirevue",
+    ],
     updated: "2026-01-11",
     category: "Review",
     author: "Editorial Team",
@@ -10973,20 +11332,34 @@ The tradeoff is that you need to invest in implementation and ongoing content ow
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Modern Hire Review (2026): Enterprise Assessments and Structured Interviewing (Part of HireVue)",
-      "description": "Independent Modern Hire review for 2026. Where it shines, common tradeoffs, implementation realities, integrations, governance, and what to validate before buying for enterprise hiring.",
-      "inLanguage": "en",
-      "datePublished": "2025-08-06",
-      "dateModified": "2026-01-11",
-      "author": { "@type": "Organization", "name": "Editorial Team" },
-      "mainEntityOfPage": { "@type": "WebPage", "@id": "/articles/modern-hire-review" }
-    }
+      headline:
+        "Modern Hire Review (2026): Enterprise Assessments and Structured Interviewing (Part of HireVue)",
+      description:
+        "Independent Modern Hire review for 2026. Where it shines, common tradeoffs, implementation realities, integrations, governance, and what to validate before buying for enterprise hiring.",
+      inLanguage: "en",
+      datePublished: "2025-08-06",
+      dateModified: "2026-01-11",
+      author: { "@type": "Organization", name: "Editorial Team" },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": "/articles/modern-hire-review",
+      },
+    },
   },
   {
-    title: "Paradox Review (2025): Conversational Screening and Auto-Scheduling at Scale",
+    title:
+      "Paradox Review (2025): Conversational Screening and Auto-Scheduling at Scale",
     slug: "paradox-review",
-    meta_description: "Independent Paradox review for 2025. Conversational screening, FAQ automation, and auto-scheduling across languages and locations. Strengths, limitations, buyer fit, integrations, security, and implementation tips.",
-    tags: ["AI recruiter", "chatbot", "scheduling", "multilingual", "automation", "volume hiring"],
+    meta_description:
+      "Independent Paradox review for 2025. Conversational screening, FAQ automation, and auto-scheduling across languages and locations. Strengths, limitations, buyer fit, integrations, security, and implementation tips.",
+    tags: [
+      "AI recruiter",
+      "chatbot",
+      "scheduling",
+      "multilingual",
+      "automation",
+      "volume hiring",
+    ],
     updated: "2026-01-11",
     category: "Review",
     author: "Editorial Team",
@@ -11256,26 +11629,37 @@ Not usually. Many teams use Paradox for speed and coordination, then add a struc
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Paradox Review (2025): Conversational Screening and Auto-Scheduling at Scale",
-      "description": "Independent Paradox review for 2025. Conversational screening, FAQ automation, and auto-scheduling across languages and locations. Strengths, limitations, buyer fit, integrations, security, and implementation tips.",
-      "inLanguage": "en",
-      "datePublished": "2025-08-06",
-      "dateModified": "2026-01-11",
-      "author": {
+      headline:
+        "Paradox Review (2025): Conversational Screening and Auto-Scheduling at Scale",
+      description:
+        "Independent Paradox review for 2025. Conversational screening, FAQ automation, and auto-scheduling across languages and locations. Strengths, limitations, buyer fit, integrations, security, and implementation tips.",
+      inLanguage: "en",
+      datePublished: "2025-08-06",
+      dateModified: "2026-01-11",
+      author: {
         "@type": "Organization",
-        "name": "Editorial Team"
+        name: "Editorial Team",
       },
-      "mainEntityOfPage": {
+      mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": "/articles/paradox-review"
-      }
-    }
+        "@id": "/articles/paradox-review",
+      },
+    },
   },
   {
     title: "Purplefish Review (2026): AI Phone Screens for High Volume Hiring",
     slug: "purplefish-review",
-    meta_description: "Purplefish review for 2026. AI phone screening with ATS sync, transcript and outcome writeback, and high volume automation. Best fit for SMB and mid market staffing and TA teams. Limitations, pricing factors, and alternatives.",
-    tags: ["AI recruiter", "voice AI", "AI phone screening", "staffing agency software", "ATS integration", "candidate screening", "recruiting automation"],
+    meta_description:
+      "Purplefish review for 2026. AI phone screening with ATS sync, transcript and outcome writeback, and high volume automation. Best fit for SMB and mid market staffing and TA teams. Limitations, pricing factors, and alternatives.",
+    tags: [
+      "AI recruiter",
+      "voice AI",
+      "AI phone screening",
+      "staffing agency software",
+      "ATS integration",
+      "candidate screening",
+      "recruiting automation",
+    ],
     updated: "2026-01-11",
     category: "Review",
     author: "Editorial Team",
@@ -11576,26 +11960,35 @@ If you need structured rubric scoring, a de-biasing layer with transparent score
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Purplefish Review (2026): AI Phone Screens for High Volume Hiring",
-      "description": "Purplefish review for 2026. AI phone screening with ATS sync, transcript and outcome writeback, and high volume automation. Best fit for SMB and mid market staffing and TA teams. Limitations, pricing factors, and alternatives.",
-      "inLanguage": "en",
-      "datePublished": "2026-01-11",
-      "dateModified": "2026-01-11",
-      "author": {
+      headline:
+        "Purplefish Review (2026): AI Phone Screens for High Volume Hiring",
+      description:
+        "Purplefish review for 2026. AI phone screening with ATS sync, transcript and outcome writeback, and high volume automation. Best fit for SMB and mid market staffing and TA teams. Limitations, pricing factors, and alternatives.",
+      inLanguage: "en",
+      datePublished: "2026-01-11",
+      dateModified: "2026-01-11",
+      author: {
         "@type": "Organization",
-        "name": "Editorial Team"
+        name: "Editorial Team",
       },
-      "mainEntityOfPage": {
+      mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": "/articles/purplefish-review"
-      }
-    }
+        "@id": "/articles/purplefish-review",
+      },
+    },
   },
   {
     title: "Ribbon Review (2026): Voice Interviews That Are Easy to Roll Out",
     slug: "ribbon-review",
-    meta_description: "Independent Ribbon review for 2026. Voice interviews that are simple to deploy, plus transcripts and instant notes. Strengths, limitations, buyer fit, and alternatives like Tenzo, Paradox, and Humanly.",
-    tags: ["AI recruiter", "voice AI", "candidate experience", "screening", "high volume hiring"],
+    meta_description:
+      "Independent Ribbon review for 2026. Voice interviews that are simple to deploy, plus transcripts and instant notes. Strengths, limitations, buyer fit, and alternatives like Tenzo, Paradox, and Humanly.",
+    tags: [
+      "AI recruiter",
+      "voice AI",
+      "candidate experience",
+      "screening",
+      "high volume hiring",
+    ],
     updated: "2026-01-11",
     category: "Review",
     author: "Editorial Team",
@@ -11885,20 +12278,33 @@ Start with one role, keep questions specific, define objective knockouts, run at
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Ribbon Review (2026): Voice Interviews That Are Easy to Roll Out",
-      "description": "Independent Ribbon review for 2026. Voice interviews that are simple to deploy, plus transcripts and instant notes. Strengths, limitations, buyer fit, and alternatives like Tenzo, Paradox, and Humanly.",
-      "inLanguage": "en",
-      "datePublished": "2025-08-06",
-      "dateModified": "2026-01-11",
-      "author": { "@type": "Organization", "name": "Editorial Team" },
-      "mainEntityOfPage": { "@type": "WebPage", "@id": "/articles/ribbon-review" }
-    }
+      headline:
+        "Ribbon Review (2026): Voice Interviews That Are Easy to Roll Out",
+      description:
+        "Independent Ribbon review for 2026. Voice interviews that are simple to deploy, plus transcripts and instant notes. Strengths, limitations, buyer fit, and alternatives like Tenzo, Paradox, and Humanly.",
+      inLanguage: "en",
+      datePublished: "2025-08-06",
+      dateModified: "2026-01-11",
+      author: { "@type": "Organization", name: "Editorial Team" },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": "/articles/ribbon-review",
+      },
+    },
   },
   {
-    title: "Sapia Review (2026): Asynchronous Text Interviews with Candidate Feedback",
+    title:
+      "Sapia Review (2026): Asynchronous Text Interviews with Candidate Feedback",
     slug: "sapia-review",
-    meta_description: "Independent Sapia review for 2026. How Sapia’s asynchronous text interview works, where it shines, where it can be a poor fit, and what to test before you buy.",
-    tags: ["AI recruiter", "text interview", "structured interview", "candidate feedback", "high-volume hiring"],
+    meta_description:
+      "Independent Sapia review for 2026. How Sapia’s asynchronous text interview works, where it shines, where it can be a poor fit, and what to test before you buy.",
+    tags: [
+      "AI recruiter",
+      "text interview",
+      "structured interview",
+      "candidate feedback",
+      "high-volume hiring",
+    ],
     updated: "2026-01-04",
     category: "Review",
     author: "Editorial Team",
@@ -12170,19 +12576,23 @@ Shorter usually wins. Optimize for completion rate and clarity. A pilot should r
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Sapia Review (2026): Asynchronous Text Interviews with Candidate Feedback",
-      "description": "Independent Sapia review for 2026. How Sapia’s asynchronous text interview works, where it shines, where it can be a poor fit, and what to test before you buy.",
-      "inLanguage": "en",
-      "datePublished": "2025-08-06",
-      "dateModified": "2026-01-04",
-      "author": { "@type": "Organization", "name": "Editorial Team" },
-      "mainEntityOfPage": { "@type": "WebPage", "@id": "/articles/sapia-review" }
-    }
+      headline:
+        "Sapia Review (2026): Asynchronous Text Interviews with Candidate Feedback",
+      description:
+        "Independent Sapia review for 2026. How Sapia’s asynchronous text interview works, where it shines, where it can be a poor fit, and what to test before you buy.",
+      inLanguage: "en",
+      datePublished: "2025-08-06",
+      dateModified: "2026-01-04",
+      author: { "@type": "Organization", name: "Editorial Team" },
+      mainEntityOfPage: { "@type": "WebPage", "@id": "/articles/sapia-review" },
+    },
   },
   {
-    title: "Vervoe Review (2026): Multi-Format Skills Tests with AI-Assisted Grading",
+    title:
+      "Vervoe Review (2026): Multi-Format Skills Tests with AI-Assisted Grading",
     slug: "vervoe-review",
-    meta_description: "Vervoe review for 2026. How the assessments work, where AI grading helps, limitations to watch for, and a practical implementation and calibration playbook for hiring teams.",
+    meta_description:
+      "Vervoe review for 2026. How the assessments work, where AI grading helps, limitations to watch for, and a practical implementation and calibration playbook for hiring teams.",
     tags: ["assessments", "skills testing", "AI grading", "hiring at scale"],
     updated: "2026-01-04",
     category: "Review",
@@ -12569,20 +12979,33 @@ It should not. Skills tests work best as a structured input that makes interview
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Vervoe Review (2026): Multi-Format Skills Tests with AI-Assisted Grading",
-      "description": "Vervoe review for 2026. How the assessments work, where AI grading helps, limitations to watch for, and a practical implementation and calibration playbook for hiring teams.",
-      "inLanguage": "en",
-      "datePublished": "2026-01-04",
-      "dateModified": "2026-01-04",
-      "author": { "@type": "Organization", "name": "Editorial Team" },
-      "mainEntityOfPage": { "@type": "WebPage", "@id": "/articles/vervoe-review" }
-    }
+      headline:
+        "Vervoe Review (2026): Multi-Format Skills Tests with AI-Assisted Grading",
+      description:
+        "Vervoe review for 2026. How the assessments work, where AI grading helps, limitations to watch for, and a practical implementation and calibration playbook for hiring teams.",
+      inLanguage: "en",
+      datePublished: "2026-01-04",
+      dateModified: "2026-01-04",
+      author: { "@type": "Organization", name: "Editorial Team" },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": "/articles/vervoe-review",
+      },
+    },
   },
   {
     title: "XOR Review (2026): SMS-First Chatbot for High-Volume Hiring",
     slug: "xor-review",
-    meta_description: "XOR review for 2026. SMS-first screening, FAQs, re-engagement, and scheduling for hourly and gig hiring. Strengths, limits, and what to validate.",
-    tags: ["AI recruiter", "SMS", "hourly hiring", "gig", "chatbot", "scheduling"],
+    meta_description:
+      "XOR review for 2026. SMS-first screening, FAQs, re-engagement, and scheduling for hourly and gig hiring. Strengths, limits, and what to validate.",
+    tags: [
+      "AI recruiter",
+      "SMS",
+      "hourly hiring",
+      "gig",
+      "chatbot",
+      "scheduling",
+    ],
     updated: "2026-01-04",
     category: "Review",
     author: "Editorial Team",
@@ -12870,20 +13293,31 @@ For many roles, XOR is best as the front door. For decisions that require struct
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "XOR Review (2026): SMS-First Chatbot for High-Volume Hiring",
-      "description": "XOR review for 2026. SMS-first screening, FAQs, re-engagement, and scheduling for hourly and gig hiring. Strengths, limits, and what to validate.",
-      "inLanguage": "en",
-      "datePublished": "2026-01-04",
-      "dateModified": "2026-01-04",
-      "author": { "@type": "Organization", "name": "Editorial Team" },
-      "mainEntityOfPage": { "@type": "WebPage", "@id": "/articles/xor-review" }
-    }
+      headline: "XOR Review (2026): SMS-First Chatbot for High-Volume Hiring",
+      description:
+        "XOR review for 2026. SMS-first screening, FAQs, re-engagement, and scheduling for hourly and gig hiring. Strengths, limits, and what to validate.",
+      inLanguage: "en",
+      datePublished: "2026-01-04",
+      dateModified: "2026-01-04",
+      author: { "@type": "Organization", name: "Editorial Team" },
+      mainEntityOfPage: { "@type": "WebPage", "@id": "/articles/xor-review" },
+    },
   },
   {
     title: "Best AI Recruiting Tools for Staffing Agencies (2026)",
     slug: "best-for-staffing",
-    meta_description: "A practical 2026 guide to AI recruiting tools for staffing agencies. Compare engagement, screening, scheduling, and enterprise auditability so you can improve speed, submittal quality, and client trust.",
-    tags: ["AI recruiting", "staffing", "RPO", "volume hiring", "Bullhorn", "ATS integrations", "candidate engagement", "voice AI interviews"],
+    meta_description:
+      "A practical 2026 guide to AI recruiting tools for staffing agencies. Compare engagement, screening, scheduling, and enterprise auditability so you can improve speed, submittal quality, and client trust.",
+    tags: [
+      "AI recruiting",
+      "staffing",
+      "RPO",
+      "volume hiring",
+      "Bullhorn",
+      "ATS integrations",
+      "candidate engagement",
+      "voice AI interviews",
+    ],
     updated: "2026-01-11",
     category: "Buyer Guide",
     author: "Editorial Team",
@@ -13135,26 +13569,36 @@ Use consistent rubrics, review artifacts, and monitor outcomes by group where ap
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Best AI Recruiting Tools for Staffing Agencies (2026)",
-      "description": "A practical 2026 guide to AI recruiting tools for staffing agencies. Compare engagement, screening, scheduling, and enterprise auditability so you can improve speed, submittal quality, and client trust.",
-      "inLanguage": "en",
-      "datePublished": "2026-01-11",
-      "dateModified": "2026-01-11",
-      "author": {
+      headline: "Best AI Recruiting Tools for Staffing Agencies (2026)",
+      description:
+        "A practical 2026 guide to AI recruiting tools for staffing agencies. Compare engagement, screening, scheduling, and enterprise auditability so you can improve speed, submittal quality, and client trust.",
+      inLanguage: "en",
+      datePublished: "2026-01-11",
+      dateModified: "2026-01-11",
+      author: {
         "@type": "Organization",
-        "name": "Editorial Team"
+        name: "Editorial Team",
       },
-      "mainEntityOfPage": {
+      mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": "/articles/best-for-staffing"
-      }
-    }
+        "@id": "/articles/best-for-staffing",
+      },
+    },
   },
   {
-    title: "ConverzAI Alternatives (2026): Tools for Outreach, Screening, Scheduling, and Defensible Hiring",
+    title:
+      "ConverzAI Alternatives (2026): Tools for Outreach, Screening, Scheduling, and Defensible Hiring",
     slug: "converzai-alternatives",
-    meta_description: "Practical, vendor-aware guide to ConverzAI alternatives in 2026. Compare outreach, screening depth, scheduling complexity, assessments, and audit-ready scoring so you can choose the right stack.",
-    tags: ["ConverzAI alternatives", "AI recruiter", "high-volume hiring", "screening", "scheduling", "structured interviews"],
+    meta_description:
+      "Practical, vendor-aware guide to ConverzAI alternatives in 2026. Compare outreach, screening depth, scheduling complexity, assessments, and audit-ready scoring so you can choose the right stack.",
+    tags: [
+      "ConverzAI alternatives",
+      "AI recruiter",
+      "high-volume hiring",
+      "screening",
+      "scheduling",
+      "structured interviews",
+    ],
     updated: "2026-01-11",
     category: "Buyer Guide",
     author: "Editorial Team",
@@ -13456,20 +13900,34 @@ When skill proof is the bottleneck, when fraud is a concern, or when clients and
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "ConverzAI Alternatives (2026): Tools for Outreach, Screening, Scheduling, and Defensible Hiring",
-      "description": "Practical guide to ConverzAI alternatives in 2026, comparing outreach, screening depth, scheduling complexity, assessments, and audit-ready scoring.",
-      "inLanguage": "en",
-      "datePublished": "2025-08-06",
-      "dateModified": "2026-01-11",
-      "author": { "@type": "Organization", "name": "Editorial Team" },
-      "mainEntityOfPage": { "@type": "WebPage", "@id": "/articles/converzai-alternatives" }
-    }
+      headline:
+        "ConverzAI Alternatives (2026): Tools for Outreach, Screening, Scheduling, and Defensible Hiring",
+      description:
+        "Practical guide to ConverzAI alternatives in 2026, comparing outreach, screening depth, scheduling complexity, assessments, and audit-ready scoring.",
+      inLanguage: "en",
+      datePublished: "2025-08-06",
+      dateModified: "2026-01-11",
+      author: { "@type": "Organization", name: "Editorial Team" },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": "/articles/converzai-alternatives",
+      },
+    },
   },
   {
-    title: "Ribbon Alternatives (2026): Options for Voice Screens, Scoring, and Scheduling",
+    title:
+      "Ribbon Alternatives (2026): Options for Voice Screens, Scoring, and Scheduling",
     slug: "ribbon-alternatives",
-    meta_description: "A practical guide to Ribbon alternatives in 2026. Compare voice screens, chat scheduling, omnichannel engagement, and structured scoring that stands up in audits.",
-    tags: ["Ribbon alternatives", "AI recruiter", "voice interviews", "scheduling", "structured interviews", "candidate engagement"],
+    meta_description:
+      "A practical guide to Ribbon alternatives in 2026. Compare voice screens, chat scheduling, omnichannel engagement, and structured scoring that stands up in audits.",
+    tags: [
+      "Ribbon alternatives",
+      "AI recruiter",
+      "voice interviews",
+      "scheduling",
+      "structured interviews",
+      "candidate engagement",
+    ],
     updated: "2026-01-11",
     category: "Buyer Guide",
     author: "Editorial Team",
@@ -13824,20 +14282,32 @@ Test real candidate calls with interruptions and background noise. Ask for compl
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Ribbon Alternatives (2026): Options for Voice Screens, Scoring, and Scheduling",
-      "description": "A practical guide to Ribbon alternatives in 2026. Compare voice screens, chat scheduling, omnichannel engagement, and structured scoring that stands up in audits.",
-      "inLanguage": "en",
-      "datePublished": "2026-01-11",
-      "dateModified": "2026-01-11",
-      "author": { "@type": "Organization", "name": "Editorial Team" },
-      "mainEntityOfPage": { "@type": "WebPage", "@id": "/articles/ribbon-alternatives" }
-    }
+      headline:
+        "Ribbon Alternatives (2026): Options for Voice Screens, Scoring, and Scheduling",
+      description:
+        "A practical guide to Ribbon alternatives in 2026. Compare voice screens, chat scheduling, omnichannel engagement, and structured scoring that stands up in audits.",
+      inLanguage: "en",
+      datePublished: "2026-01-11",
+      dateModified: "2026-01-11",
+      author: { "@type": "Organization", name: "Editorial Team" },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": "/articles/ribbon-alternatives",
+      },
+    },
   },
   {
     title: "Tenzo Alternatives (2025): Top Options by Use Case and Budget",
     slug: "tenzo-alternatives",
-    meta_description: "A neutral guide to Tenzo alternatives in 2025. Compare options for throughput, candidate experience, scheduling, and skill validation. Includes quick-pick tables and implementation tips.",
-    tags: ["AI recruiter alternatives", "comparisons", "staffing", "enterprise", "assessments"],
+    meta_description:
+      "A neutral guide to Tenzo alternatives in 2025. Compare options for throughput, candidate experience, scheduling, and skill validation. Includes quick-pick tables and implementation tips.",
+    tags: [
+      "AI recruiter alternatives",
+      "comparisons",
+      "staffing",
+      "enterprise",
+      "assessments",
+    ],
     updated: "2025-08-06",
     category: "Buyer Guide",
     author: "Editorial Team",
@@ -13918,13 +14388,17 @@ More: [/articles/sapia-review](/articles/sapia-review)
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Tenzo Alternatives (2025): Top Options by Use Case and Budget",
-      "description": "A neutral guide to Tenzo alternatives in 2025. Compare options for throughput, candidate experience, scheduling, and skill validation. Includes quick-pick tables and implementation tips.",
-      "inLanguage": "en",
-      "datePublished": "2025-08-06",
-      "dateModified": "2025-08-06",
-      "author": { "@type": "Organization", "name": "Editorial Team" },
-      "mainEntityOfPage": { "@type": "WebPage", "@id": "/articles/tenzo-alternatives" }
-    }
-  }
+      headline: "Tenzo Alternatives (2025): Top Options by Use Case and Budget",
+      description:
+        "A neutral guide to Tenzo alternatives in 2025. Compare options for throughput, candidate experience, scheduling, and skill validation. Includes quick-pick tables and implementation tips.",
+      inLanguage: "en",
+      datePublished: "2025-08-06",
+      dateModified: "2025-08-06",
+      author: { "@type": "Organization", name: "Editorial Team" },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": "/articles/tenzo-alternatives",
+      },
+    },
+  },
 ];

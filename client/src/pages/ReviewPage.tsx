@@ -209,7 +209,7 @@ export default function ReviewPage() {
                       <p>If a vendor cannot show those end to end, they are not ready for a CX focused rollout.</p>
                     </div>
                   ) : (
-                    <div className="prose prose-lg max-w-none text-muted-foreground/90 font-serif leading-relaxed prose-headings:text-foreground prose-headings:font-sans prose-strong:text-foreground prose-a:text-primary">
+                    <div className="prose prose-lg max-w-none text-gray-800 font-serif leading-loose prose-headings:text-gray-900 prose-headings:font-sans prose-strong:text-gray-900 prose-a:text-primary prose-p:mb-6 prose-li:mb-4 prose-ul:my-8">
                       <ReactMarkdown 
                         remarkPlugins={[remarkGfm]}
                         components={{
