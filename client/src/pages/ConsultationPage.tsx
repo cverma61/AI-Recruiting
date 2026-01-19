@@ -16,8 +16,6 @@ export default function ConsultationPage() {
     const formData = new FormData(e.currentTarget);
     const data = Object.fromEntries(formData.entries());
 
-    // Replace with your Formspree endpoint or similar service
-    // For now, we simulate a submission
     try {
       const response = await fetch("https://formspree.io/f/xbddobaq", {
         method: "POST",
