@@ -21,9 +21,11 @@ export function Navbar() {
           <Link href="/comparisons" className="hover:text-primary transition-colors">Comparisons</Link>
           <Link href="/reviews" className="hover:text-primary transition-colors">Reviews</Link>
           <Link href="/resources" className="hover:text-primary transition-colors">Resources</Link>
-          <button className="px-5 py-2.5 bg-gray-900 text-white text-sm font-bold rounded-md hover:bg-gray-800 transition-colors">
-            Subscribe
-          </button>
+          <Link href="/consultation">
+            <button className="px-5 py-2.5 bg-gray-900 text-white text-sm font-bold rounded-md hover:bg-gray-800 transition-colors">
+              Book Free Consultation
+            </button>
+          </Link>
         </div>
 
         {/* Mobile Toggle */}
@@ -50,9 +52,11 @@ export function Navbar() {
             <Link href="/" className="px-4 py-2 hover:bg-gray-50 rounded-md" onClick={() => setIsMobileMenuOpen(false)}>Reviews</Link>
             <Link href="/" className="px-4 py-2 hover:bg-gray-50 rounded-md" onClick={() => setIsMobileMenuOpen(false)}>Resources</Link>
             <div className="pt-4 border-t">
-              <button className="w-full py-3 bg-gray-900 text-white font-bold rounded-md">
-                Subscribe
-              </button>
+              <Link href="/consultation">
+                <button className="w-full py-3 bg-gray-900 text-white font-bold rounded-md" onClick={() => setIsMobileMenuOpen(false)}>
+                  Book Free Consultation
+                </button>
+              </Link>
             </div>
           </div>
         </div>
