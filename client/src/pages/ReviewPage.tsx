@@ -53,6 +53,10 @@ const CXPillarsRubric = () => {
   );
 };
 
+import { Link } from "wouter";
+
+// ... previous imports
+
 export default function ReviewPage() {
   const [, params] = useRoute("/articles/:slug");
   const slug = params?.slug;
@@ -62,6 +66,14 @@ export default function ReviewPage() {
   
   // Find article from new library
   const dynamicArticle = articles.find(a => a.slug === slug);
+  
+  // Find related articles (same category, excluding current)
+  const relatedArticles = articles
+    .filter(a => a.category === dynamicArticle?.category && a.slug !== slug)
+    .slice(0, 3);
+
+  // ... rest of component logic
+
   
   // Fallback to existing static data if not found or if it's the specific purplefish review we already styled
   const useStaticPurplefish = slug === "purplefish-review";
@@ -261,6 +273,38 @@ export default function ReviewPage() {
                               </a>
                           </div>
                       ))}
+                  </div>
+               </section>
+             )}
+
+             {/* Related Articles Section */}
+             {relatedArticles && relatedArticles.length > 0 && (
+               <section className="pt-16 border-t mt-16">
+                  <h2 className="text-2xl md:text-3xl font-bold font-sans text-foreground mb-8">
+                      Related Reviews
+                  </h2>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {relatedArticles.map((article) => (
+                      <Link key={article.slug} href={`/articles/${article.slug}`}>
+                        <div className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition-all cursor-pointer group h-full flex flex-col">
+                          <div className="p-6 flex-1">
+                            <span className="text-[10px] font-bold text-primary uppercase tracking-widest mb-3 block">
+                              {article.category}
+                            </span>
+                            <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors leading-tight line-clamp-2">
+                              {article.title}
+                            </h3>
+                            <p className="text-gray-600 font-serif leading-relaxed line-clamp-3 text-sm">
+                              {article.meta_description}
+                            </p>
+                          </div>
+                          <div className="px-6 py-4 bg-gray-50 border-t flex items-center justify-between mt-auto">
+                            <span className="text-[11px] font-bold text-gray-400 uppercase tracking-wider">{article.readTime}</span>
+                            <ArrowRight className="w-4 h-4 text-primary group-hover:translate-x-1 transition-transform" />
+                          </div>
+                        </div>
+                      </Link>
+                    ))}
                   </div>
                </section>
              )}
