@@ -37,6 +37,7 @@ export const articles: Article[] = [
     content: `Buyers evaluating AI recruiters usually have one of two problems.
 
 1. **1. You cannot reach enough candidates fast enough.**
+
 2. **2. You can reach candidates, but you cannot qualify them consistently and defensibly at scale.**
 
 
