@@ -7,7 +7,7 @@ import { TOC } from "@/components/review/TOC";
 import { articles } from "@/lib/articles";
 import { Calendar, Clock, User, Share2, Twitter, Linkedin, Facebook, ArrowRight, CheckCircle2 } from "lucide-react";
 import stockImage from '@assets/stock_images/abstract_digital_net_94d5aa42.jpg';
-import { useRoute, useLocation } from "wouter";
+import { useRoute } from "wouter";
 import { Progress } from "@/components/ui/progress";
 import { Footer } from "@/components/layout/Footer";
 import { useCanonical } from "@/hooks/useCanonical";
@@ -53,10 +53,12 @@ const CXPillarsRubric = () => {
 };
 
 import { Link } from "wouter";
+import { useToast } from "@/hooks/use-toast";
 
 // ... previous imports
 
 export default function ReviewPage() {
+  const { toast } = useToast();
   const [, params] = useRoute("/articles/:slug");
   const slug = params?.slug;
   
@@ -70,8 +72,14 @@ export default function ReviewPage() {
   const relatedArticles = articles
     .filter(a => a.category === dynamicArticle?.category && a.slug !== slug)
     .slice(0, 3);
+
+  // ... rest of component logic
+
   
-  const { title, date, author, readTime, tags, verdict, sections, alternatives, jsonLd } = {
+  // Fallback to existing static data if not found or if it's the specific purplefish review we already styled
+  const useStaticPurplefish = slug === "purplefish-review";
+  
+  const { title, date, author, readTime, tags, verdict, sections, alternatives, jsonLd } = useStaticPurplefish ? { ...purplefishReview, jsonLd: undefined } : {
     title: dynamicArticle?.title || "",
     date: dynamicArticle?.updated || "",
     author: dynamicArticle?.author || "Editorial Team",
@@ -119,7 +127,7 @@ export default function ReviewPage() {
     }
   }, [jsonLd]);
 
-  if (!dynamicArticle) {
+  if (!dynamicArticle && !useStaticPurplefish) {
     return <div className="p-20 text-center font-sans">Article not found.</div>;
   }
 
@@ -175,7 +183,16 @@ export default function ReviewPage() {
           {/* Main Content Area */}
           <main className="lg:col-span-8 space-y-12">
             {/* Introduction - styled as lead text - ONLY for static Purplefish review */}
-            
+            {useStaticPurplefish && (
+              <div className="prose prose-lg md:prose-xl max-w-none text-foreground font-serif leading-loose first-letter:text-5xl first-letter:font-bold first-letter:text-primary first-letter:mr-1 first-letter:float-left mb-12">
+                <p>
+                  Purplefish is a voice screening platform designed to automate first round phone screens and push the results back into your ATS. It is typically evaluated by staffing and talent teams that want to reduce time spent on repetitive screening calls while keeping recruiters working inside their system of record.
+                </p>
+                <p className="text-base text-muted-foreground">
+                    This review focuses on what Purplefish does well, where buyers should be realistic, and what to validate in a demo and pilot. It also includes common alternatives for teams that need more structured scoring and stronger audit artifacts.
+                </p>
+              </div>
+            )}
 
             {verdict && (
               <div id="verdict">
@@ -214,39 +231,6 @@ export default function ReviewPage() {
                       <ReactMarkdown 
                         remarkPlugins={[remarkGfm]}
                         components={{
-                          a: ({node, href, children, ...props}) => {
-                            const [, setLocation] = useLocation();
-                            const isInternal = href?.startsWith('/');
-                            
-                            if (isInternal && href) {
-                              return (
-                                <a
-                                  href={href}
-                                  onClick={(e) => {
-                                    e.preventDefault();
-                                    setLocation(href);
-                                    window.scrollTo(0, 0);
-                                  }}
-                                  {...props}
-                                  className="text-primary hover:underline font-medium"
-                                >
-                                  {children}
-                                </a>
-                              );
-                            }
-                            
-                            return (
-                              <a 
-                                href={href} 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                {...props} 
-                                className="text-primary hover:underline font-medium"
-                              >
-                                {children}
-                              </a>
-                            );
-                          },
                           table: ({node, ...props}) => (
                             <div className="overflow-x-auto my-8 rounded-lg border bg-card/50">
                               <table className="w-full text-sm text-left" {...props} />
@@ -298,6 +282,29 @@ export default function ReviewPage() {
                   </div>
                </section>
              )}
+
+             {/* Consultation CTA */}
+             <section className="pt-16 border-t mt-16 bg-gradient-to-br from-primary/5 to-transparent rounded-2xl p-8 md:p-12 text-center md:text-left">
+                <div className="grid md:grid-cols-3 gap-8 items-center">
+                  <div className="md:col-span-2 space-y-4">
+                    <h2 className="text-2xl md:text-3xl font-bold font-sans text-foreground">
+                      Still not sure what's right for you?
+                    </h2>
+                    <p className="text-lg text-muted-foreground leading-relaxed">
+                      Feeling overwhelmed with all the vendors and not sure what’s best for YOU? 
+                      Book a free consultation with our veteran team with over 100 years of combined 
+                      recruiting experience and deep experience trialing all products in this space.
+                    </p>
+                  </div>
+                  <div className="md:col-span-1 flex justify-center md:justify-end">
+                    <Link href="/consultation">
+                      <button className="inline-flex items-center justify-center rounded-md text-sm font-bold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8 py-2 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+                        Book Free Consultation <ArrowRight className="ml-2 h-4 w-4" />
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+             </section>
 
              {/* Related Articles Section */}
              {relatedArticles && relatedArticles.length > 0 && (
@@ -365,7 +372,10 @@ export default function ReviewPage() {
                       <button 
                         onClick={() => {
                           navigator.clipboard.writeText(window.location.href);
-                          // Optional: You could add a toast here
+                          toast({
+                            title: "Link copied",
+                            description: "Review link copied to clipboard",
+                          });
                         }}
                         className="p-2 bg-background border rounded-full hover:text-primary hover:border-primary transition-colors"
                         title="Copy Link"
