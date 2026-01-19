@@ -4,7 +4,6 @@ import remarkGfm from 'remark-gfm';
 import { Navbar } from "@/components/layout/Navbar";
 import { Verdict } from "@/components/review/Verdict";
 import { TOC } from "@/components/review/TOC";
-import { purplefishReview } from "@/lib/data";
 import { articles } from "@/lib/articles";
 import { Calendar, Clock, User, Share2, Twitter, Linkedin, Facebook, ArrowRight, CheckCircle2 } from "lucide-react";
 import stockImage from '@assets/stock_images/abstract_digital_net_94d5aa42.jpg';

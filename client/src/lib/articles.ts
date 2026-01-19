@@ -1,4 +1,3 @@
-import { purplefishReview } from "./data";
 
 export interface Article {
   title: string;
