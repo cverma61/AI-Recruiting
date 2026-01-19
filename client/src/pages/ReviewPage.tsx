@@ -7,7 +7,7 @@ import { TOC } from "@/components/review/TOC";
 import { articles } from "@/lib/articles";
 import { Calendar, Clock, User, Share2, Twitter, Linkedin, Facebook, ArrowRight, CheckCircle2 } from "lucide-react";
 import stockImage from '@assets/stock_images/abstract_digital_net_94d5aa42.jpg';
-import { useRoute } from "wouter";
+import { useRoute, useLocation } from "wouter";
 import { Progress } from "@/components/ui/progress";
 import { Footer } from "@/components/layout/Footer";
 import { useCanonical } from "@/hooks/useCanonical";
@@ -214,6 +214,39 @@ export default function ReviewPage() {
                       <ReactMarkdown 
                         remarkPlugins={[remarkGfm]}
                         components={{
+                          a: ({node, href, children, ...props}) => {
+                            const [, setLocation] = useLocation();
+                            const isInternal = href?.startsWith('/');
+                            
+                            if (isInternal && href) {
+                              return (
+                                <a
+                                  href={href}
+                                  onClick={(e) => {
+                                    e.preventDefault();
+                                    setLocation(href);
+                                    window.scrollTo(0, 0);
+                                  }}
+                                  {...props}
+                                  className="text-primary hover:underline font-medium"
+                                >
+                                  {children}
+                                </a>
+                              );
+                            }
+                            
+                            return (
+                              <a 
+                                href={href} 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                {...props} 
+                                className="text-primary hover:underline font-medium"
+                              >
+                                {children}
+                              </a>
+                            );
+                          },
                           table: ({node, ...props}) => (
                             <div className="overflow-x-auto my-8 rounded-lg border bg-card/50">
                               <table className="w-full text-sm text-left" {...props} />
