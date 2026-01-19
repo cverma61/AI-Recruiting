@@ -109,6 +109,11 @@ export default function ReviewPage() {
   };
 
   useEffect(() => {
+    // Scroll to top when slug changes
+    window.scrollTo(0, 0);
+  }, [slug]);
+
+  useEffect(() => {
     if (jsonLd) {
       const script = document.createElement('script');
       script.type = 'application/ld+json';
