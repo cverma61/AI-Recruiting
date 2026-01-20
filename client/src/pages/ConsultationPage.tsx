@@ -17,7 +17,7 @@ export default function ConsultationPage() {
     const data = Object.fromEntries(formData.entries());
 
     try {
-      const response = await fetch("https://formspree.io/f/xbddobaq", {
+      const response = await fetch("https://formspree.io/f/mvzzqpla", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {

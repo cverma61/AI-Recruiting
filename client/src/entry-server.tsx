@@ -1,7 +1,7 @@
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { Router } from 'wouter';
-import { memoryLocation } from 'wouter/memory-location';
+import { memoryLocation } from './lib/wouter-memory-location';
 import App from './App';
 import { articles } from './lib/articles';
 

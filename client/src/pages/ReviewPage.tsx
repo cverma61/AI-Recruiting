@@ -75,11 +75,7 @@ export default function ReviewPage() {
 
   // ... rest of component logic
 
-  
-  // Fallback to existing static data if not found or if it's the specific purplefish review we already styled
-  const useStaticPurplefish = slug === "purplefish-review";
-  
-  const { title, date, author, readTime, tags, verdict, sections, alternatives, jsonLd } = useStaticPurplefish ? { ...purplefishReview, jsonLd: undefined } : {
+  const { title, date, author, readTime, tags, verdict, sections, alternatives, jsonLd } = {
     title: dynamicArticle?.title || "",
     date: dynamicArticle?.updated || "",
     author: dynamicArticle?.author || "Editorial Team",
@@ -109,6 +105,7 @@ export default function ReviewPage() {
     jsonLd: dynamicArticle?.jsonLd
   };
 
+
   useEffect(() => {
     // Scroll to top when slug changes
     window.scrollTo(0, 0);
@@ -127,7 +124,7 @@ export default function ReviewPage() {
     }
   }, [jsonLd]);
 
-  if (!dynamicArticle && !useStaticPurplefish) {
+  if (!dynamicArticle) {
     return <div className="p-20 text-center font-sans">Article not found.</div>;
   }
 
@@ -182,18 +179,7 @@ export default function ReviewPage() {
           
           {/* Main Content Area */}
           <main className="lg:col-span-8 space-y-12">
-            {/* Introduction - styled as lead text - ONLY for static Purplefish review */}
-            {useStaticPurplefish && (
-              <div className="prose prose-lg md:prose-xl max-w-none text-foreground font-serif leading-loose first-letter:text-5xl first-letter:font-bold first-letter:text-primary first-letter:mr-1 first-letter:float-left mb-12">
-                <p>
-                  Purplefish is a voice screening platform designed to automate first round phone screens and push the results back into your ATS. It is typically evaluated by staffing and talent teams that want to reduce time spent on repetitive screening calls while keeping recruiters working inside their system of record.
-                </p>
-                <p className="text-base text-muted-foreground">
-                    This review focuses on what Purplefish does well, where buyers should be realistic, and what to validate in a demo and pilot. It also includes common alternatives for teams that need more structured scoring and stronger audit artifacts.
-                </p>
-              </div>
-            )}
-
+            
             {verdict && (
               <div id="verdict">
                   <Verdict {...verdict} />
