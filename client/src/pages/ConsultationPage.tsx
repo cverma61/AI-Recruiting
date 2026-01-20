@@ -151,7 +151,7 @@ export default function ConsultationPage() {
                 
                 <div className="space-y-2">
                   <label htmlFor="topic" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
-                    What would you like to discuss?
+                    We're looking for an AI interviewing solution to combat high fake candidate rates and would like advice…
                   </label>
                   <textarea
                     id="topic"
