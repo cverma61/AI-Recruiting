@@ -4,7 +4,7 @@ import "./index.css";
 
 const rootElement = document.getElementById("root");
 
-if (rootElement!.hasChildNodes()) {
+if (rootElement!.hasChildNodes() && !rootElement!.innerHTML.includes("<!--app-html-->")) {
   hydrateRoot(rootElement!, <App />);
 } else {
   createRoot(rootElement!).render(<App />);
